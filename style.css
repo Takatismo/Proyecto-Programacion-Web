@@ -149,7 +149,15 @@ html {
     margin-top: 2.5rem;
 }
 
-
+.banner-buttons a {
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 1rem 2.5rem;
+}
 
 footer {
     background: #2c1e16;
