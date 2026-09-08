@@ -143,12 +143,14 @@ html {
     line-height: 1.2;
 }
 
-.banner-buttons a{
-    text-orientation: none;
-    color: var(--dark-color);
-    font-size: 3rem;
-
+.container-banner a{
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
 }
+
+
 
 footer {
     background: #2c1e16;
