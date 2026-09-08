@@ -124,12 +124,14 @@ html {
 
 .container-banner h2,
 .container-banner p {
-    border: 2px white;
+    -webkit-text-stroke: 2px black;
+    color: white;
 }
 
 
 .banner-buttons a{
     text-orientation: none;
+    color: var(--dark-color);
 
 }
 
