@@ -4,3 +4,13 @@
     --background-color: #f9f5f0;
     --darkcolor: #151515;
 }
+html{
+    font-size: 62%;
+    font-family: 'Poppins',sans-serif;
+}
+
+*{
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+}
