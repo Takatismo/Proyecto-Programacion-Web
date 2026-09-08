@@ -122,12 +122,13 @@ html {
     margin: 20px 0;
 }
 
-.container-banner{
-    border:2px white;
+.container-banner h2,
+.container-banner p {
+    border: 2px white;
 }
 
 
-.banner-buttons{
+.banner-buttons a{
     text-orientation: none;
 
 }
