@@ -117,9 +117,10 @@ html {
 
 .banner {
 	background: url(imagenes/ELMEJORCAFE.jpg) no-repeat center center/cover;
+    text-decoration: none;
     padding: 60px 20px;
     text-align: center;
-
+    border: 2px white;
     margin: 20px 0;
 }
 
