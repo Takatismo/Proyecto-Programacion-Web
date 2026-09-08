@@ -143,7 +143,7 @@ html {
     line-height: 1.2;
 }
 
-.banner-buttons{
+.banner-buttons a{
     text-decoration: none;
     color: #fff;
     background-color: transparent;
