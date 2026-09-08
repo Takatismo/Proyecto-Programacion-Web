@@ -116,7 +116,7 @@ html {
 }
 
 .banner {
-	background: url(imagenes/ELMEJORCAFE.jpg) no-repeat center center/cover;
+	background:linear-gradient(100deg, #000000,#00000020), url(imagenes/ELMEJORCAFE.jpg) no-repeat center center/cover;
     background-size: cover;
     background-position: center;
     padding: 60px 20px;
