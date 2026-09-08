@@ -143,11 +143,10 @@ html {
     line-height: 1.2;
 }
 
-.banner-buttons a{
-    text-decoration: none;
-    color: #fff;
-    background-color: transparent;
-    border: 1px solid #fff;
+.banner-buttons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
 }
 
 
