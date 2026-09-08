@@ -160,6 +160,10 @@ html {
     padding: 1rem 2.5rem;
 }
 
+.beneficios{
+    align-items: center;
+}
+
 footer {
     background: #2c1e16;
     color: #fff;
