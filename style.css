@@ -117,6 +117,8 @@ html {
 
 .banner {
 	background: url(imagenes/ELMEJORCAFE.jpg) no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
     padding: 60px 20px;
     text-align: center;
     margin: 20px 0;
