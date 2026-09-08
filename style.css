@@ -14,3 +14,19 @@ html{
     padding:0%;
     box-sizing: border-box;
 }
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.container-hero{
+    background-color: var(--background-color);
+}
+
+.hero{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0%;
+}
