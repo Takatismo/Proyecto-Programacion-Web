@@ -124,10 +124,17 @@ html {
     margin: 20px 0;
 }
 
-.container-banner h2,
-.container-banner p {
-    -webkit-text-stroke: 1px black;
-    color: white;
+.container-banner {
+    max-width: 90rem;
+    margin:auto;
+    padding: 25rem 0;
+}
+.container-banner p{
+    color:var(--primary-color);
+    font-size: 1.2rem ;
+    margin-bottom: 1rem;
+    font-weight: 500;
+
 }
 
 
