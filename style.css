@@ -120,7 +120,6 @@ html {
     background-size: cover;
     background-position: center;
     padding: 60px 20px;
-    text-align: center;
     margin: 20px 0;
 }
 
@@ -131,12 +130,18 @@ html {
 }
 .container-banner p{
     color:var(--primary-color);
-    font-size: 1.2rem ;
-    margin-bottom: 1rem;
+    font-size: 1.6rem ;
+    margin-bottom: 1.5rem;
     font-weight: 500;
 
 }
 
+.container-banner h2{
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
 
 .banner-buttons a{
     text-orientation: none;
