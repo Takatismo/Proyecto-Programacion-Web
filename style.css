@@ -104,10 +104,15 @@ html {
 	content: '';
 	width: 1.5rem;
 	height: 1px;
-	background-color: #fff;
 	position: absolute;
 	bottom: -3px;
 	left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+}
+
+.menu a:hover {
+	color: #fff;
 }
 
 .banner {
