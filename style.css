@@ -116,10 +116,10 @@ html {
 }
 
 .banner {
-    background: #6b4c3b;
+	background: url(ELMEJORCAFE.jpg) no-repeat center center/cover;
     padding: 60px 20px;
     text-align: center;
-    color: #fff;
+
     margin: 20px 0;
 }
 
