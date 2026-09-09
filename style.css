@@ -22,12 +22,6 @@ html {
     margin: 0 auto;
 }
 
-.heading-1 {
-    text-align: center;
-    font-weight: 500;
-    font-size: 3rem;
-}
-
 .container-hero {
     background-color: var(--background-color);
 }
@@ -45,9 +39,6 @@ html {
     gap: 2rem;
 }
 
-.customer-support i {
-    font-size: 3.3rem;
-}
 
 .content-customer-support {
     display: flex;
@@ -58,10 +49,6 @@ html {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-}
-
-.container-logo i {
-    font-size: 3em;
 }
 
 .container-logo h1 a {
@@ -100,28 +87,17 @@ html {
 	position: relative;
 }
 
-.menu a::after {
-	content: '';
-	width: 1.5rem;
-	height: 1px;
-	position: absolute;
-	bottom: -3px;
-	left: 50%;
-    transform: translate(-50%, 50%);
-    opacity: 0;
-}
 
 .menu a:hover {
 	color: #fff;
 }
 
 .banner {
-	background:linear-gradient(100deg, #000000,#00000020), url(imagenes/ELMEJORCAFE.jpg) no-repeat center center/cover;
-    background-size: cover;
-    background-position: center;
+	background:linear-gradient(100deg, #000000,#00000020),
+     url(imagenes/ELMEJORCAFE.jpg) no-repeat center center/cover;
     align-items: flex-start;
     padding: 60px 20px;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .container-banner {

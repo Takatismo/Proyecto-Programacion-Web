@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,172 +8,172 @@
     <title>Anteiku Caffe</title>
     <link rel="icon" href="imagenes/AnteikuCafe.ico">
 </head>
+
 <body>
-    
-<header>
-    <div class="container-hero">
-        <div class="container hero">
-    
-            <div class="customer-support">
-                <i class="fa-solid fa-headset"></i>
-                <div class="content-customer-support">
-                    <span class="text">Soporte al cliente</span>
-                    <span class="number">123-456-7890</span>
+
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+
+                <div class="customer-support">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="content-customer-support">
+                        <span class="text">Soporte al cliente</span>
+                        <span class="number">123-456-7890</span>
+                    </div>
+                </div>
+
+                <div class="container-logo">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <h1 class="logo"><a href="/">Anteiku</a></h1>
+                </div>
+
+                <div class="relleno centrado"></div>
+
+            </div>
+        </div>
+
+
+        <div class="container-nav">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+
+                <ul class="menu">
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">CARTA</a></li>
+                    <li><a href="#">CONTACTANOS</a></li>
+                    <li><a href="#reservar" class="btn-reservar">RESERVAR</a></li>
+                </ul>
+
+
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar..." />
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <script src="https://kit.fontawesome.com/e2bfc37a57.js" crossorigin="anonymous">
+    </script>
+
+    <main>
+        <section id="inicio" class="banner">
+            <div class="container-banner">
+                <P>Un buen café para despegar.</P>
+                <h2>LA VIDA COMIENZA <br>DESPUES DE UN CAFÉ</h2>
+
+
+                <div class="banner-buttons">
+                    <a href="#">VER CARTA</a>
+                    <a href="#">RESERVAR<br>AHORA</a>
                 </div>
             </div>
-    
-            <div class="container-logo">
-                <i class="fa-solid fa-mug-hot"></i>
-                <h1 class="logo"><a href="/">Anteiku</a></h1>
-            </div>
-    
-            <div class="relleno centrado"></div>
-    
-        </div>
-    </div>
+        </section>
+    </main>
 
-    
-    <div class="container-nav">
-        <nav class="navbar container">
-            <i class="fa-solid fa-bars"></i>
+    <section id="beneficios">
+        <table>
+            <tr>
+                <td class="cbeneficios">
+                    <h3>CAFÉ Y POSTRES</h3>
+                    <p>El mejor grano artesanal y repostería recién horneada.</p>
+                </td>
 
-            <ul class="menu">
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#">CARTA</a></li>
-                <li><a href="#">CONTACTANOS</a></li>
-                <li><a href="#reservar" class="btn-reservar">RESERVAR</a></li>
-            </ul>
+                <td class="cbeneficios">
+                    <h3>SIEMPRE ABIERTO</h3>
+                    <p>Atención todos los días en cualquier momento.</p>
+                </td>
 
-
-            <form class="search-form">
-                <input type="search"  placeholder="Buscar..."/>
-                <button class="btn-search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button> 
-            </form>
-        </nav>
-    </div>
-</header>
-
-<script 
-    src="https://kit.fontawesome.com/e2bfc37a57.js"
-    crossorigin="anonymous">
-</script>
-
-<main>
-    <section id="inicio" class="banner">
-        <div class="container-banner">
-            <P>Un buen café para despegar.</P>
-            <h2>LA VIDA COMIENZA <br>DESPUES DE UN CAFÉ</h2>
-
-            
-            <div class="banner-buttons">
-            <a href="#">VER CARTA</a>
-            <a href="#">RESERVAR<br>AHORA</a>
-            </div>
-        </div>
+                <td class="cbeneficios">
+                    <h3>VARIOS AMBIENTES</h3>
+                    <p>Espacios listos para estudios, citas o reuniones.</p>
+                </td>
+            </tr>
+        </table>
     </section>
-</main>
 
-<section id="Beneficios">
-    <table>
-        <tr>
-            <td class="cbeneficios">
-                <h3>CAFÉ Y POSTRES</h3>
-                <p>El mejor grano artesanal y repostería recién horneada.</p>
-            </td>
+    <section id="reservar" class="reservas">
 
-            <td class="cbeneficios">
-                <h3>SIEMPRE ABIERTO</h3>
-                <p>Atención todos los días en cualquier momento.</p>
-            </td>
+        <div class="container-reservas">
 
-            <td class="cbeneficios">
-                <h3>VARIOS AMBIENTES</h3>
-                <p>Espacios listos para estudios, citas o reuniones.</p>
-            </td>
-        </tr>
-    </table>
-</section>
-    
-<section id="reservar" class="reservas">
+            <h2>Reserva tu mesa</h2>
 
-    <div class="container-reservas">
+            <p>Completa el formulario y reserva tu espacio en Anteiku Caffe.</p>
 
-        <h2>Reserva tu mesa</h2>
+            <form class="form-reserva">
 
-        <p>Completa el formulario y reserva tu espacio en Anteiku Caffe.</p>
+                <div class="campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
 
-        <form class="form-reserva">
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej. 987654321" required>
+                </div>
 
-            <div class="campo">
-                <label for="nombre">Nombre completo</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
-            </div>
+                <div class="campo">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
 
-            <div class="campo">
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="Ej. 987654321" required>
-            </div>
+                <div class="campo">
+                    <label for="hora">Hora</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
 
-            <div class="campo">
-                <label for="fecha">Fecha</label>
-                <input type="date" id="fecha" name="fecha" required>
-            </div>
+                <div class="campo">
+                    <label for="personas">Número de personas</label>
 
-            <div class="campo">
-                <label for="hora">Hora</label>
-                <input type="time" id="hora" name="hora" required>
-            </div>
+                    <select id="personas" name="personas" required>
+                        <option value="">Seleccionar</option>
+                        <option value="1">1 persona</option>
+                        <option value="2">2 personas</option>
+                        <option value="3">3 personas</option>
+                        <option value="4">4 personas</option>
+                        <option value="5">5 personas</option>
+                        <option value="6">6 personas</option>
+                    </select>
 
-            <div class="campo">
-                <label for="personas">Número de personas</label>
+                </div>
 
-                <select id="personas" name="personas" required>
-                    <option value="">Seleccionar</option>
-                    <option value="1">1 persona</option>
-                    <option value="2">2 personas</option>
-                    <option value="3">3 personas</option>
-                    <option value="4">4 personas</option>
-                    <option value="5">5 personas</option>
-                    <option value="6">6 personas</option>
-                </select>
+                <div class="campo campo-completo">
 
-            </div>
+                    <label for="mensaje">Mensaje (opcional)</label>
 
-            <div class="campo campo-completo">
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Alguna solicitud especial?"></textarea>
 
-                <label for="mensaje">Mensaje (opcional)</label>
+                </div>
 
-                <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Alguna solicitud especial?"></textarea>
+                <button type="submit" class="btn-reserva">
+                    RESERVAR
+                </button>
 
-            </div>
+            </form>
 
-            <button type="submit" class="btn-reserva">
-                RESERVAR
-            </button>
+        </div>
 
-        </form>
-
-    </div>
-
-</section>
-</body>
+    </section>
 
     <footer>
-        <div class="cfooter">
-            <div class="fcontactanos">
-                <h4>Contáctanos</h4>
-                <p>961 481 378</p>
-                <p>anteikucoffe@gmail.com</p>
-                <p>Av. Vallejo con Av. Alamos - Lima</p>
-            </div>
-            <div class="chorario">
-                <h4>HORARIO</h4>
-                <P>Lunes a Viernes: 7:00 am - 10:00 pm</P>
-                <P>Sábado a Domingo: 8:00 am - 11:00 pm</P>
-            </div>
+    <div class="cfooter">
+        <div class="fcontactanos">
+            <h4>Contáctanos</h4>
+            <p>961 481 378</p>
+            <p>anteikucoffe@gmail.com</p>
+            <p>Av. Vallejo con Av. Alamos - Lima</p>
         </div>
+        <div class="chorario">
+            <h4>HORARIO</h4>
+            <P>Lunes a Viernes: 7:00 am - 10:00 pm</P>
+            <P>Sábado a Domingo: 8:00 am - 11:00 pm</P>
+        </div>
+    </div>
 
-    </footer>
+</footer>
+
+</body>
 </html>
