@@ -1,1 +1,89 @@
+<section id="reservar" class="reservas">
 
+    <div class="container-reservas">
+
+        <h2>Reserva tu mesa</h2>
+
+        <p>Completa el formulario y reserva tu espacio en Anteiku Caffe.</p>
+
+        <form class="form-reserva">
+
+            <div class="campo">
+                <label for="nombre">Nombre completo</label>
+                <input 
+                    type="text" 
+                    id="nombre" 
+                    name="nombre" 
+                    placeholder="Ingresa tu nombre" 
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="telefono">Teléfono</label>
+                <input 
+                    type="tel" 
+                    id="telefono" 
+                    name="telefono" 
+                    placeholder="Ej. 987654321" 
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="fecha">Fecha</label>
+                <input 
+                    type="date" 
+                    id="fecha" 
+                    name="fecha" 
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="hora">Hora</label>
+                <input 
+                    type="time" 
+                    id="hora" 
+                    name="hora" 
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="personas">Número de personas</label>
+
+                <select id="personas" name="personas" required>
+                    <option value="">Seleccionar</option>
+                    <option value="1">1 persona</option>
+                    <option value="2">2 personas</option>
+                    <option value="3">3 personas</option>
+                    <option value="4">4 personas</option>
+                    <option value="5">5 personas</option>
+                    <option value="6">6 personas</option>
+                </select>
+
+            </div>
+
+            <div class="campo campo-completo">
+
+                <label for="mensaje">Mensaje (opcional)</label>
+
+                <textarea 
+                    id="mensaje" 
+                    name="mensaje" 
+                    rows="4" 
+                    placeholder="¿Alguna solicitud especial?"
+                ></textarea>
+
+            </div>
+
+            <button type="submit" class="btn-reserva">
+                RESERVAR MESA
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
