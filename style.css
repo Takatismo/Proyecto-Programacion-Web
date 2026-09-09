@@ -177,3 +177,90 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+.reservas {
+    background-color: var(--background-color);
+    padding: 6rem 2rem;
+}
+
+.container-reservas {
+    max-width: 90rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-reservas h2 {
+    font-size: 3.5rem;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.container-reservas > p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.form-reserva {
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    text-align: left;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    padding: 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: var(--primary-color);
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.campo-completo {
+    grid-column: 1 / 3;
+}
+
+.btn-reserva {
+    grid-column: 1 / 3;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.btn-reserva:hover {
+    background-color: #a9845e;
+}
