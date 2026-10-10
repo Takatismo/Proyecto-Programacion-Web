@@ -144,10 +144,10 @@ html {
 }
 
 .beneficios{
-    text-align: center;
     display: flex;
-    justify-content: space-between;
-    width: 33.33%;
+}
+.cbeneficio{
+    text-align: center;
 }
 
 footer {
