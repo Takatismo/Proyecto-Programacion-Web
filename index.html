@@ -1,163 +1,181 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="La Masseria, cafetería de pasteles, bocaditos y café en Villa El Salvador, Lima">
-    <meta name="keywords" content="cafetería, pasteles, bocaditos, café, catering, Villa El Salvador">
-    <meta name="author" content="Tu nombre">
-    <title>La Masseria | Inicio</title>
-    <link rel="stylesheet" href="istyle.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Anteiku Caffe</title>
+    <link rel="icon" href="imagenes/AnteikuCafe.ico">
 </head>
+
 <body>
+
     <header>
-        <h1>La Masseria</h1>
-        <p>Pasteles, bocaditos y café</p>
+        <div class="container-hero">
+            <div class="container hero">
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="carta.html">Carta</a></li>
-                <li><a href="catering.html">Catering</a></li>
-                <li><a href="ubicacion.html">Ubicación</a></li>
-                <li><a href="contacto.html">Contáctanos</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="portada">
-            <div class="carrusel">
-
-                <div class="slide slide1">
-                    <img src="imagenes/tazacaffe.jpg" alt="Taza de café en La Masseria">
-                    <div class="slide-texto">
-                        <h2>Pasteles, bocaditos y café recién hechos</h2>
-                        <p>
-                            Ven a disfrutar de nuestros bocaditos dulces y salados,
-                            una buena taza de café y un ambiente acogedor.
-                        </p>
-                        <a class="boton" href="carta.html">Ver carta</a>
+                <div class="customer-support">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="content-customer-support">
+                        <span class="text">Soporte al cliente</span>
+                        <span class="number">123-456-7890</span>
                     </div>
                 </div>
 
-                <div class="slide slide2">
-                    <img src="imagenes/bocaditos.jpg" alt="Bocaditos dulces y salados">
-                    <div class="slide-texto">
-                        <h2>Catering para tus eventos</h2>
-                        <p>
-                            Bocaditos dulces y salados con entrega a domicilio.
-                            Escríbenos con un día de anticipación.
-                        </p>
-                        <a class="boton" href="https://wa.me/51912594051" target="_blank">Pedir por WhatsApp</a>
-                    </div>
+                <div class="container-logo">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <h1 class="logo"><a href="/">La Masseria</a></h1>
                 </div>
 
-                <div class="slide slide3">
-                    <img src="imagenes/terraza.jpg" alt="Terraza de La Masseria con plantas">
-                    <div class="slide-texto">
-                        <h2>Disfruta nuestra terraza</h2>
-                        <p>
-                            Lunes a viernes de 5 PM a 9 PM.
-                            Sábado y domingo de 7:30 AM a 9 PM.
-                        </p>
-                        <a class="boton" href="#horarios">Ver horarios</a>
-                    </div>
-                </div>
+                <div class="relleno centrado"></div>
 
             </div>
+        </div>
+
+
+        <div class="container-nav">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+
+                <ul class="menu">
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="carta.html">CARTA</a></li>
+                    <li><a href="#">CONTACTANOS</a></li>
+                    <li><a href="#reservar" class="btn-reservar">RESERVAR</a></li>
+                </ul>
+
+
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar..." />
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <script src="https://kit.fontawesome.com/e2bfc37a57.js" crossorigin="anonymous">
+    </script>
+
+    <main>
+        <section id="inicio" class="banner">
+            <div class="container-banner">
+                <P>Un buen café para despegar.</P>
+                <h2>LA VIDA COMIENZA <br>DESPUES DE UN CAFÉ</h2>
+
+
+                <div class="banner-buttons">
+                    <a href="carta.html">VER CARTA</a>
+                    
+                </div>
+            </div>
         </section>
-
-        <section id="horarios">
-            <h2>Horarios de atención</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Zona</th>
-                        <th>Días</th>
-                        <th>Horario</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Salón</td>
-                        <td>Lunes a domingo</td>
-                        <td>7:30 AM - 9:30 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Terraza</td>
-                        <td>Lunes a viernes</td>
-                        <td>5:00 PM - 9:00 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Terraza</td>
-                        <td>Sábado y domingo</td>
-                        <td>7:30 AM - 9:00 PM</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>No necesitas reservar, la atención es por orden de llegada.</p>
-        </section>
-
-        <section id="productos">
-            <h2>Lo que ofrecemos</h2>
-
-            <article>
-                <img src="imagenes/calientecafe.jpg" alt="Café caliente">
-                <h3>Cafés</h3>
-                <p>Una taza para empezar bien el día.</p>
-            </article>
-
-            <article>
-                <img src="imagenes/pasteles.jpg" alt="Pasteles de la vitrina">
-                <h3>Pasteles</h3>
-                <p>Tortas y porciones para cada antojo.</p>
-            </article>
-
-            <article>
-                <img src="imagenes/bdulcesalado.jpg" alt="Bocaditos dulces y salados">
-                <h3>Bocaditos</h3>
-                <p>Dulces y salados, ideales para compartir.</p>
-            </article>
-
-            <article>
-                <img src="imagenes/bonbones.jpg" alt="Bombones de chocolate">
-                <h3>Chocolates</h3>
-                <p>Bombones y chocolates para regalar.</p>
-            </article>
-        </section>
-
-        <section id="catering">
-            <h2>Catering para tus eventos</h2>
-            <p>
-                Si tienes un evento o cumpleaños, también hacemos servicio de catering
-                con variedad de bocaditos dulces y salados y entrega a domicilio.
-            </p>
-            <p>
-                Escríbenos por WhatsApp al <strong>912 594 051</strong>
-                con un día de anticipación.
-            </p>
-            <a class="boton" href="catering.html">Más información</a>
-        </section>
-
-        <section id="resenas">
-            <h2>Lo que dicen de nosotros</h2>
-            <p><strong>4,5 de 5</strong> estrellas en Google Maps</p>
-            <p>Más de 842 reseñas de nuestros clientes.</p>
-        </section>
-
     </main>
 
+    <section id="beneficios">
+        <table>
+            <tr>
+                <td class="cbeneficios">
+                    <h3>CAFÉ Y POSTRES</h3>
+                    <p>El mejor grano artesanal y repostería recién horneada.</p>
+                </td>
+
+                <td class="cbeneficios">
+                    <h3>SIEMPRE ABIERTO</h3>
+                    <p>Atención todos los días en cualquier momento.</p>
+                </td>
+
+                <td class="cbeneficios">
+                    <h3>VARIOS AMBIENTES</h3>
+                    <p>Espacios listos para estudios, citas o reuniones.</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="reservar" class="reservas">
+
+        <div class="container-reservas">
+
+            <h2>Reserva tu mesa</h2>
+
+            <p>Completa el formulario y reserva tu espacio en Anteiku Caffe.</p>
+
+            <form class="form-reserva">
+
+                <div class="campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej. 987654321" required>
+                </div>
+
+                <div class="campo">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <div class="campo">
+                    <label for="hora">Hora</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+
+                <div class="campo">
+                    <label for="personas">Número de personas</label>
+
+                    <select id="personas" name="personas" required>
+                        <option value="">Seleccionar</option>
+                        <option value="1">1 persona</option>
+                        <option value="2">2 personas</option>
+                        <option value="3">3 personas</option>
+                        <option value="4">4 personas</option>
+                        <option value="5">5 personas</option>
+                        <option value="6">6 personas</option>
+                    </select>
+
+                </div>
+
+                <div class="campo campo-completo">
+
+                    <label for="mensaje">Mensaje (opcional)</label>
+
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Alguna solicitud especial?"></textarea>
+
+                </div>
+
+                <button type="submit" class="btn-reserva">
+                    RESERVAR
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
     <footer>
-        <p>
-            La Masseria<br>
-            Av. Universitaria, Villa El Salvador, Lima<br>
-            Teléfono: (01) 734 9549 | WhatsApp: 912 594 051
-        </p>
-        <p>Síguenos en Instagram: <a href="https://www.instagram.com/lamasseria_" target="_blank">@lamasseria_</a></p>
-        <p>&copy; 2026 La Masseria. Todos los derechos reservados.</p>
-    </footer>
+    <div class="cfooter">
+        <div class="fcontactanos">
+            <h4>Contáctanos</h4>
+            <p>961 481 378</p>
+            <p>anteikucoffe@gmail.com</p>
+            <p>Av. Vallejo con Av. Alamos - Lima</p>
+        </div>
+        <div class="chorario">
+            <h4>HORARIO</h4>
+            <P>Lunes a Viernes: 7:00 am - 10:00 pm</P>
+            <P>Sábado a Domingo: 8:00 am - 11:00 pm</P>
+        </div>
+    </div>
+
+    hollaaa borar mas rato
+
+</footer>
 
 </body>
 </html>
