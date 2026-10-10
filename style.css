@@ -143,11 +143,16 @@ html {
     padding: 1rem 2rem;
 }
 
-.beneficios{
+.beneficios {
     display: flex;
-}
-.cbeneficio{
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
+    padding: 40px 60px;
+    gap: 30px;
+}
+.cbeneficios {
+    flex: 1;
 }
 
 footer {
