@@ -146,6 +146,7 @@ html {
 .cbeneficios{
     text-align: center;
     display: flex;
+    justify-content: space-between;
     width: 33.33%;
 }
 
