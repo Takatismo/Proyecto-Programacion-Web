@@ -408,6 +408,19 @@ footer {
         background-color: #0b0705;
         border-bottom: 2px solid var(--primary-color);
     }
+    .search-form {
+        background-color: #1c1410;
+        border-color: #3a2a20;
+    }
+
+    .search-form input {
+        background-color: transparent;
+        color: #f5ede3;
+    }
+
+    .search-form .btn-search {
+        color: var(--primary-color);
+    }
 
     .menu a {
         color: #f5ede3;
