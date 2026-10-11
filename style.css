@@ -144,12 +144,12 @@ html {
 }
 
 #beneficios {
-    display: flex;                 
-    justify-content: space-between; 
-    align-items: center;        
-    width: 100%;                   
-    padding: 20px;                  
-    box-sizing: border-box;       
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 
@@ -269,4 +269,99 @@ footer {
 
 .btn-reserva:hover {
     background-color: #a9845e;
+}
+
+
+
+
+/* Segundo avance  */
+/* Segundo avance  */
+/* Segundo avance  */
+/* Segundo avance  */
+/* Segundo avance  */
+/* Segundo avance  */
+
+.carta{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 6rem 2rem; 
+}
+
+.carta h2{
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.carta > p{/* ereaser*/
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.carta h3{
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin:5rem 0 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.carta h4 {
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    margin: 2.5rem 0 1.5rem;
+}
+
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem 2.5rem;
+}
+
+.productos div {
+    background-color: var(--background-color);
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productos div:hover {
+    transform: scale(1.06);
+    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 1;
+}
+
+.productos img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 0.6rem;
+    background-color: #e6dccf;
+    margin-bottom: 1.5rem;
+}
+
+
+.productos strong {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.productos span {
+    display: block;
+    font-size: 1.6rem;
+}
+
+@media (max-width: 900px) {
+    .productos { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+    .productos { grid-template-columns: 1fr; }
+    .carta h2 { font-size: 3rem; }
 }
