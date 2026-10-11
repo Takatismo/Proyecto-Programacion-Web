@@ -356,6 +356,37 @@ footer {
     display: block;
     font-size: 1.6rem;
 }
+.search-form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 2rem;
+    background-color: #fff;
+    height: 3rem;
+}
+.search-form input{
+    font-family: inherit;
+    border: none;
+    outline: none;
+    width: 25rem;
+    padding: 0 2rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    color: #777;
+}
+.search-form input::-webkit-search-cancel-button{
+    appearance: none;
+}
+.search-form .btn-search{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding:1rem;
+}
 
 @media (prefers-color-scheme: dark) {
     :root {
