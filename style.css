@@ -127,9 +127,7 @@ html {
 }
 
 .banner-buttons a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     text-align: center;
     text-decoration: none;
     color: #fff;
@@ -138,9 +136,12 @@ html {
     border-radius: 0.4rem;
     font-size: 1.4rem;
     font-weight: 500;
-    min-width: 15rem;
-    min-height: 5rem;
-    padding: 1rem 2rem;
+    padding: 1.5rem 4rem;
+}
+
+.banner-buttons a:hover {
+    background-color: #fff;
+    color: var(--dark-color);
 }
 
 #beneficios {
