@@ -357,6 +357,13 @@ footer {
     font-size: 1.6rem;
 }
 
+@media (prefers-color-scheme: dark){
+    body{
+        background-color: #151515;
+        color: #fff;
+    }
+}
+
 @media (max-width: 900px) {
     .productos { grid-template-columns: repeat(2, 1fr); }
 }
