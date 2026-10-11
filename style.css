@@ -357,10 +357,35 @@ footer {
     font-size: 1.6rem;
 }
 
-@media (prefers-color-scheme: dark){
-    body{
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #232323;
+        color-scheme: dark;
+    }
+
+    body {
         background-color: #151515;
         color: #fff;
+    }
+
+    .container-logo h1 a {
+        color: #fff;
+    }
+
+    .container-reservas h2 {
+        color: #fff;
+    }
+
+    .form-reserva {
+        background-color: #232323;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea {
+        background-color: #151515;
+        color: #fff;
+        border-color: #444;
     }
 }
 
