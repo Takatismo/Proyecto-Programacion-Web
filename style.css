@@ -359,48 +359,85 @@ footer {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color: #2c1e16;
+        --primary-color: #e8a54b;
+        --background-color: #1c1410;
         color-scheme: dark;
     }
 
     body {
-        background-color: #1f1611;
-        color: #f3ebe2;
+        background-color: #110c09;
+        color: #f5ede3;
     }
 
     .container-logo h1 a {
-        color: #f3ebe2;
+        color: #f5ede3;
     }
 
     .container-nav {
-        background-color: #1a110c;
-        border-top: 1px solid var(--primary-color);
-        border-bottom: 1px solid var(--primary-color);
+        background-color: #0b0705;
+        border-bottom: 2px solid var(--primary-color);
     }
 
     .menu a {
-        color: var(--primary-color);
+        color: #f5ede3;
     }
 
     .menu a:hover {
-        color: #fff;
+        color: var(--primary-color);
     }
 
-    /* Reservas */
+    .banner-buttons a {
+        border-color: var(--primary-color);
+        color: var(--primary-color);
+    }
+
+    .banner-buttons a:hover {
+        background-color: var(--primary-color);
+        color: #110c09;
+    }
+
+
+    .productos div {
+        border: 1px solid #2e211a;
+    }
+
+    .productos div:hover {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 2rem rgba(232, 165, 75, 0.25);
+    }
+
+    .carta h3 {
+        color: var(--primary-color);
+    }
+
     .container-reservas h2 {
-        color: #f3ebe2;
+        color: #f5ede3;
     }
 
     .form-reserva {
-        background-color: #3a2a20;
+        background-color: #1c1410;
+        border: 1px solid #2e211a;
     }
 
     .campo input,
     .campo select,
     .campo textarea {
-        background-color: #1f1611;
-        color: #f3ebe2;
-        border-color: #5a4637;
+        background-color: #110c09;
+        color: #f5ede3;
+        border-color: #3a2a20;
+    }
+
+    .btn-reserva {
+        color: #110c09;
+    }
+
+    .btn-reserva:hover {
+        background-color: #f2b968;
+    }
+
+    footer {
+        background-color: #0b0705;
+        border-top: 2px solid var(--primary-color);
     }
 }
 
