@@ -273,6 +273,347 @@ footer {
     background-color: #a9845e;
 }
 
+/* INICIOOOOO  */
+/* INICIOOOOO  */
+/* INICIOOOOO  */
+/* INICIOOOOO   */ 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4efe3;
+    color: #3f2e26;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    color: #b4531f;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #3f2e26;
+    color: #f4efe3;
+    padding: 20px;
+}
+
+.logo-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+nav a {
+    color: #f4efe3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d9c3a0;
+    text-decoration: underline;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #b4531f;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: #8a3d14;
+}
+
+.carrusel {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carrusel1,
+.carrusel2,
+.carrusel3 {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.carrusel img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.caja-texto {
+    background-color: #3f2e26;
+    color: #f4efe3;
+    padding: 20px;
+}
+
+.caja-texto h2 {
+    color: #f4efe3;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.caja-texto p {
+    margin-bottom: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+th {
+    background-color: #3f2e26;
+    color: #f4efe3;
+    padding: 12px;
+}
+
+td {
+    border: 1px solid #d9c3a0;
+    padding: 12px;
+    text-align: center;
+}
+
+.nota {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+#productos {
+    text-align: center;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.productos article {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.productos img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.productos h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#catering {
+    background-color: #3f2e26;
+    color: #f4efe3;
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#catering h2 {
+    color: #d9c3a0;
+}
+
+#catering p {
+    margin-bottom: 10px;
+}
+
+#catering .boton {
+    margin-top: 10px;
+}
+
+.reservas {
+    background-color: #e9dfca;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+.container-reservas {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-reservas > p {
+    margin-bottom: 25px;
+}
+
+.form-reserva {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: left;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: #b4531f;
+    outline: none;
+}
+
+.campo-completo {
+    grid-column: 1 / -1;
+}
+
+.btn-reserva {
+    grid-column: 1 / -1;
+    background-color: #b4531f;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-reserva:hover {
+    background-color: #8a3d14;
+}
+
+#resenas {
+    text-align: center;
+}
+
+footer {
+    background-color: #3f2e26;
+    color: #f4efe3;
+    text-align: center;
+    padding: 30px 20px;
+    line-height: 1.8;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #d9c3a0;
+}
+
+.carrusel {
+    position: relative;
+    height: 450px;
+}
+
+.carrusel1,
+.carrusel2,
+.carrusel3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    animation-name: pasar;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.carrusel img {
+    height: 100%;
+}
+
+.carrusel1 {
+    animation-delay: 0s;
+}
+
+.carrusel2 {
+    animation-delay: 5s;
+}
+
+.carrusel3 {
+    animation-delay: 10s;
+}
+
+.caja-texto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(63, 46, 38, 0.75);
+}
+
 /* Segundo avance  */
 /* Segundo avance  */
 /* Segundo avance  */
