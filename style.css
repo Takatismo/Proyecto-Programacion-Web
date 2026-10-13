@@ -214,9 +214,11 @@ footer {
     padding: 3rem;
     border-radius: 1rem;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+
     text-align: left;
 }
 
@@ -265,12 +267,7 @@ footer {
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    cursor: pointer;
     border-radius: 0.5rem;
-}
-
-.btn-reserva:hover {
-    background-color: #a9845e;
 }
 
 /* INICIOOOOO  */
