@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 ::-webkit-scrollbar {
@@ -907,4 +908,872 @@ footer a {
     .texto-logo p {
         font-size: 1.1rem;
     }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --primary-color: #c7a17a;
+    --background-color: #f9f5f0;
+    --dark-color: #151515;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.container-hero {
+    background-color: var(--background-color);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.customer-support {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.customer-support i {
+    font-size: 3.3rem;
+}
+
+.content-customer-support {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+
+
+.container-logo {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.texto-logo h1 {
+    font-size: 3.6rem;
+    line-height: 1.1;
+}
+
+
+.container-nav {
+    background-color: var(--primary-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--dark-color);
+    font-weight: 600;
+    position: relative;
+}
+
+
+.menu a:hover {
+    color: #fff;
+}
+
+
+footer {
+    background: #2c1e16;
+    color: #fff;
+    padding: 30px 20px 15px;
+    margin-top: 40px;
+}
+
+
+.reservas {
+    background-color: var(--background-color);
+    padding: 6rem 2rem;
+}
+
+.container-reservas h2 {
+    color: #1c1412;
+}
+
+.container-reservas>p {
+    color: #3a2d28;
+    font-size: 1.6rem;
+}
+
+
+.form-reserva {
+    color: #f5ecd9;
+}
+
+.campo label,
+.lugares-titulo,
+.lugar span {
+    color: #1c1412;
+}
+
+.form-reserva {
+    background-color: var(--dark-color);
+    color: var(--background-color);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 20px rgba(5, 5, 5, 0.1);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    text-align: left;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.campo input:not([type="checkbox"]),
+.campo select,
+.campo textarea {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    padding: 1.2rem;
+    border: 1px solid #6e3c3c;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.campo input:not([type="checkbox"]):focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: var(--primary-color);
+}
+
+.lugares-titulo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.lugares {
+    grid-column: 1 / 3;
+}
+
+.lugares-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.lugar img {
+    width: 100%;
+    height: 22rem;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    border: 3px solid transparent;
+    display: block;
+}
+
+.lugar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.lugar input {
+    grid-column: 1;
+    grid-row: 1;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: 0;
+    cursor: pointer;
+    accent-color: var(--primary-color);
+}
+
+.lugar span {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.lugar img {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    width: 100%;
+    height: 22rem;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    border: 3px solid transparent;
+    display: block;
+}
+
+.lugar input:checked+img {
+    border-color: var(--primary-color);
+}
+
+.btn-reserva {
+    grid-column: 1 / 3;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.btn-reserva:hover {
+    opacity: 0.9;
+}
+
+/* INICIOOOOO  */
+/* INICIOOOOO  */
+/* INICIOOOOO  */
+/* INICIOOOOO   */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4efe3;
+    color: #3f2e26;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    color: #b4531f;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.logo {
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+nav a {
+    color: #f4efe3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d9c3a0;
+    text-decoration: underline;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #b4531f;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: #8a3d14;
+}
+
+.carrusel {
+    position: relative;
+    height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carrusel1, .carrusel2, .carrusel3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    animation: pasar 15s infinite;
+}
+
+.carrusel img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caja-texto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(63, 46, 38, 0.75);
+    color: #f4efe3;
+}
+
+.caja-texto h2 {
+    color: #f4efe3;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.caja-texto p {
+    margin-bottom: 52px;
+}
+
+table {
+    width: 100%;
+    color: black;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+th {
+    background-color: #3f2e26;
+    color: #f4efe3;
+    padding: 12px;
+}
+
+td {
+    border: 1px solid #d9c3a0;
+    padding: 12px;
+    text-align: center;
+}
+
+.nota {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+#productos {
+    text-align: center;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.txt-produ{
+    color : #3f2e26;
+}
+
+.productos article {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.productos img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.productos h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#catering {
+    background-color: #3f2e26;
+    color: #f4efe3;
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#catering h2 {
+    color: #d9c3a0;
+}
+
+#catering p {
+    margin-bottom: 10px;
+}
+
+#catering .boton {
+    margin-top: 10px;
+}
+
+.reservas {
+    background-color: #e9dfca;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+.container-reservas {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-reservas>p {
+    margin-bottom: 25px;
+}
+
+.form-reserva {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: left;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: #b4531f;
+    outline: none;
+}
+
+
+.btn-reserva {
+    grid-column: 1 / -1;
+    background-color: #b4531f;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-reserva:hover {
+    background-color: #8a3d14;
+}
+
+
+footer {
+    background-color: #3f2e26;
+    color: #f4efe3;
+    text-align: center;
+    padding: 30px 20px;
+    line-height: 1.8;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #d9c3a0;
+}
+
+@keyframes pasar {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    5% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    33% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    38% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* Segundo avance  */
+/* Segundo avance  */
+/* Segundo avance  */
+/* Segundo avance  */
+/* Segundo avance  */
+/* Segundo avance  */
+
+.carta {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+}
+
+.carta h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.carta>p {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.carta h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin: 5rem 0 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.carta h4 {
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    margin: 2.5rem 0 1.5rem;
+}
+
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem 2.5rem;
+}
+
+.productos div {
+    background-color: var(--background-color);
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productos div:hover {
+    transform: scale(1.06);
+    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 1;
+}
+
+.productos img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 0.6rem;
+    background-color: #e6dccf;
+    margin-bottom: 1.5rem;
+}
+
+
+.productos strong {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.productos span {
+    display: block;
+    font-size: 1.6rem;
+}
+
+.search-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 2rem;
+    background-color: #fff;
+    height: 3rem;
+}
+
+.search-form input {
+    font-family: inherit;
+    border: none;
+    outline: none;
+    width: 25rem;
+    padding: 0 2rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    color: #777;
+}
+
+.search-form input::-webkit-search-cancel-button {
+    appearance: none;
+}
+
+.search-form .btn-search {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #e8a54b;
+        --background-color: #1c1410;
+        color-scheme: dark;
+    }
+
+    body {
+        background-color: #110c09;
+        color: #f5ede3;
+    }
+
+    .container-logo h1 a {
+        color: #f5ede3;
+    }
+
+    .container-nav {
+        background-color: #0b0705;
+        border-bottom: 2px solid var(--primary-color);
+    }
+
+    .search-form {
+        background-color: #1c1410;
+        border-color: #3a2a20;
+    }
+
+    .search-form input {
+        background-color: transparent;
+        color: #f5ede3;
+    }
+
+    .search-form .btn-search {
+        color: var(--primary-color);
+    }
+
+    .menu a {
+        color: #f5ede3;
+    }
+
+    .menu a:hover {
+        color: var(--primary-color);
+    }
+
+
+    .productos div {
+        border: 1px solid #2e211a;
+    }
+
+    .productos div:hover {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 2rem rgba(232, 165, 75, 0.25);
+    }
+
+    .carta h3 {
+        color: var(--primary-color);
+    }
+
+    .container-reservas h2 {
+        color: #f5ede3;
+    }
+
+    .form-reserva {
+        background-color: #1c1410;
+        border: 1px solid #2e211a;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea {
+        background-color: #110c09;
+        color: #f5ede3;
+        border-color: #3a2a20;
+    }
+
+    .btn-reserva {
+        color: #110c09;
+    }
+
+    .btn-reserva:hover {
+        background-color: #f2b968;
+    }
+
+    footer {
+        background-color: #0b0705;
+            border-top: 2px solid var(--primary-color);
+        }
+        
+        .campo label,
+        .lugares-titulo,
+        .lugar span {
+            color: #f5ecd9;
+        }
+}
+
+
+@media (max-width: 768px) {
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-form {
+        display: none;
+    }
+
+    .navbar .fa-bars {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem 2rem;
+    }
+
+    .reservas {
+        padding: 3rem 1.5rem;
+    }
+
+    .form-reserva {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        gap: 1.5rem;
+    }
+
+    .lugares,
+    .btn-reserva {
+        grid-column: 1 / -1;
+    }
+
+    .lugares-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .lugar img {
+        height: 18rem;
+    }
+
+    .campo input,
+    .campo select {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .customer-support,
+    .relleno {
+        display: none;
+    }
+
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    header h1 {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+
+    .texto-logo p {
+        font-size: 1.1rem;
+    }
+>>>>>>> 904f35735c7b18bd62d5e0408f2d711c49965353
 }
