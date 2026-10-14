@@ -49,6 +49,7 @@ html {
 .content-customer-support {
     display: flex;
     flex-direction: column;
+    text-decoration: none;
 }
 
 .container-logo {
@@ -461,11 +462,12 @@ nav a:hover {
 }
 
 .caja-texto p {
-    margin-bottom: 12px;
+    margin-bottom: 52px;
 }
 
 table {
     width: 100%;
+    color: black;
     border-collapse: collapse;
     background-color: #ffffff;
 }
@@ -947,6 +949,27 @@ footer a {
     .campo select {
         width: 100%;
         min-width: 0;
+    }
+
+        .customer-support,
+    .relleno {
+        display: none;
+    }
+        .customer-support,
+    .relleno {
+        display: none;
+    }
+        .logo {
+        width: 55px;
+        height: 55px;
+    }
+
+      header h1 {
+        font-size: 20px;
+        white-space: nowrap;   
+    }
+        .texto-logo p {
+        font-size: 1.1rem;
     }
 }
 
