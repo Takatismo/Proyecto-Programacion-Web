@@ -346,28 +346,38 @@ nav a:hover {
 }
 
 .carrusel {
+    position: relative;
+    height: 450px;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.carrusel1,
-.carrusel2,
-.carrusel3 {
-    position: relative;
-    margin-bottom: 20px;
+.carrusel1, .carrusel2, .carrusel3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    animation: pasar 15s infinite;
 }
 
 .carrusel img {
     display: block;
     width: 100%;
-    height: 350px;
+    height: 100%;
     object-fit: cover;
 }
 
 .caja-texto {
-    background-color: #3f2e26;
-    color: #f4efe3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     padding: 20px;
+    background-color: rgba(63, 46, 38, 0.75);
+    color: #f4efe3;
 }
 
 .caja-texto h2 {
@@ -569,54 +579,6 @@ footer a {
         opacity: 0;
         visibility: hidden;
     }
-}
-
-.carrusel {
-    position: relative;
-    height: 450px;
-}
-
-.carrusel1,
-.carrusel2,
-.carrusel3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 0;
-    opacity: 0;
-    visibility: hidden;
-    animation-name: pasar;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-}
-
-.carrusel img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.carrusel1 {
-    animation-delay: 0s;
-}
-
-.carrusel2 {
-    animation-delay: 5s;
-}
-
-.carrusel3 {
-    animation-delay: 10s;
-}
-
-.caja-texto {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(63, 46, 38, 0.75);
 }
 
 /* Segundo avance  */
