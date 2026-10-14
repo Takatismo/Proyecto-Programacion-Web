@@ -281,19 +281,8 @@ footer {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    gap: 1rem 1rem;
+    gap: 1rem;
     cursor: pointer;
-}
-
-.lugar img {
-    grid-column: 1 / 3;
-    grid-row: 1;
-    width: 100%;
-    height: 22rem;
-    object-fit: cover;
-    border-radius: 0.8rem;
-    border: 3px solid transparent;
-    display: block;
 }
 
 .lugar input {
@@ -313,10 +302,20 @@ footer {
     font-weight: 600;
 }
 
+.lugar img {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    width: 100%;
+    height: 22rem;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    border: 3px solid transparent;
+    display: block;
+}
+
 .lugar input:checked + img {
     border-color: var(--primary-color);
 }
-
 .btn-reserva {
     grid-column: 1 / 3;
     border: none;
