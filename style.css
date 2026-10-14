@@ -233,7 +233,6 @@ footer {
     margin-bottom: 0.8rem;
 }
 
-.campo input,
 .campo select,
 .campo textarea {
     font-family: 'Poppins', sans-serif;
@@ -244,18 +243,9 @@ footer {
     outline: none;
 }
 
-.campo input:focus,
 .campo select:focus,
 .campo textarea:focus {
     border-color: var(--primary-color);
-}
-
-.campo textarea {
-    resize: vertical;
-}
-
-.campo-completo {
-    grid-column: 1 / 3;
 }
 
 .btn-reserva {
