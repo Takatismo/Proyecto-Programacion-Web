@@ -42,6 +42,9 @@ html {
     gap: 2rem;
 }
 
+.customer-support i{
+    font-size: 3.3rem;
+}
 
 .content-customer-support {
     display: flex;
@@ -893,8 +896,11 @@ footer a {
     }
 }
 
-@media (max-width: 900px) {
+
+
+@media (max-width: 768px) {
     .productos { grid-template-columns: repeat(2, 1fr); }
+    
 }
 
 @media (max-width: 560px) {
