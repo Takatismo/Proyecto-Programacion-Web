@@ -897,10 +897,28 @@ footer a {
 }
 
 
-
 @media (max-width: 768px) {
-    .productos { grid-template-columns: repeat(2, 1fr); }
-    
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-form {
+        display: none;
+    }
+
+    .navbar .fa-bars {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem 2rem;
+    }
 }
 
 @media (max-width: 560px) {
