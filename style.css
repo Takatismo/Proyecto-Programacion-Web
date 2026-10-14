@@ -224,7 +224,6 @@ footer {
     text-align: left;
 }
 
-/* Campos */
 .campo {
     display: flex;
     flex-direction: column;
@@ -253,7 +252,6 @@ footer {
     border-color: var(--primary-color);
 }
 
-/* Selección de lugar */
 .lugares-titulo {
     font-size: 1.6rem;
     font-weight: 700;
