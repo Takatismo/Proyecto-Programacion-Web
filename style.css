@@ -795,7 +795,7 @@ footer a {
     }
 
     .container-reservas h2 {
-        color: #f5ede3;
+        color: #1c1410;
     }
 
     .form-reserva {
@@ -811,9 +811,6 @@ footer a {
         border-color: #3a2a20;
     }
 
-    .btn-reserva {
-        color: #110c09;
-    }
 
     .btn-reserva:hover {
         background-color: #f2b968;
