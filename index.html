@@ -191,26 +191,31 @@
                             <option value="6">6 personas</option>
                         </select>
                     </div>
+                    <div class="lugares">
+                        <h3 class="lugares-titulo">SELECCIONA EL LUGAR:</h3>
 
-                    <div class="reservas">
-                        <article>
-                            <img src="imagenes/azotea.jpg" alt="">
-                            <h3>Azotea</h3>
-                            <p>Disfruta al aire libre</p>
-                        </article>
+                        <div class="lugares-lista">
 
-                        <article>
-                            <img src="imagenes/interior-2.jpg" alt="">
-                            <h3>Interior 2</h3>
-                            <p>Reencuentrate contigo mismo</p>
-                        </article>
+                            <label class="lugar">
+                                <input type="checkbox" name="lugar" value="terraza">
+                                <img src="imagenes/azotea.jpg" alt="Terraza">
+                                <span>Terraza</span>
+                            </label>
 
-                        <article>
-                            <img src="imagenes/interior-1.jpg" alt="">
-                            <h3>Interior 1</h3>
-                            <p>Comparte la dulzura con los ingredientes</p>
-                        </article>
-                    <div>            
+                            <label class="lugar">
+                                <input type="checkbox" name="lugar" value="interior-2">
+                                <img src="imagenes/interior-2.jpg" alt="interior 2">
+                                <span>Interior 2</span>
+                            </label>
+
+                            <label class="lugar">
+                                <input type="checkbox" name="lugar" value="interior-1">
+                                <img src="imagenes/interior-1.jpg" alt="Interior 1">
+                                <span>Interior 1</span>
+                            </label>
+
+                        </div>
+                    </div>         
                     <button type="submit" class="btn-reserva">
                         RESERVAR
                      </button>
