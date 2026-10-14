@@ -122,9 +122,10 @@ footer {
 
 .container-reservas>p {
     color: #3a2d28;
+    font-size: 1.6rem;
 }
 
-/* Textos dentro del formulario (sobre fondo oscuro) */
+
 .form-reserva {
     color: #f5ecd9;
 }
@@ -132,7 +133,7 @@ footer {
 .campo label,
 .lugares-titulo,
 .lugar span {
-    color: #f5ecd9;
+    color: #1c1412;
 }
 
 .form-reserva {
@@ -820,8 +821,14 @@ footer a {
 
     footer {
         background-color: #0b0705;
-        border-top: 2px solid var(--primary-color);
-    }
+            border-top: 2px solid var(--primary-color);
+        }
+        
+        .campo label,
+        .lugares-titulo,
+        .lugar span {
+            color: #f5ecd9;
+        }
 }
 
 
