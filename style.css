@@ -192,21 +192,23 @@ footer {
     padding: 6rem 2rem;
 }
 
-.container-reservas {
-    max-width: 90rem;
-    margin: 0 auto;
-    text-align: center;
-}
-
 .container-reservas h2 {
-    font-size: 3.5rem;
-    color: var(--dark-color);
-    margin-bottom: 1rem;
+    color: #1c1412;
 }
 
 .container-reservas > p {
-    font-size: 1.5rem;
-    margin-bottom: 3rem;
+    color: #3a2d28;
+}
+
+/* Textos dentro del formulario (sobre fondo oscuro) */
+.form-reserva {
+    color: #f5ecd9;
+}
+
+.campo label,
+.lugares-titulo,
+.lugar span {
+    color: #f5ecd9;
 }
 
 .form-reserva {
