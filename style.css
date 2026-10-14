@@ -833,6 +833,13 @@ footer a {
 
 
 @media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    
     .productos {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -901,5 +908,16 @@ footer a {
 
     .texto-logo p {
         font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .productos,
+    .carta .productos {
+        grid-template-columns: 1fr;
+    }
+
+    .carta h2 {
+        font-size: 3rem;
     }
 }
