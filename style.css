@@ -631,6 +631,14 @@ footer a {
     color: #d9c3a0;
 }
 
+@keyframes pasar {
+    0% { opacity: 0; visibility: hidden; }
+    5% { opacity: 1; visibility: visible; }
+    33% { opacity: 1; visibility: visible; }
+    38% { opacity: 0; visibility: hidden; }
+    100% { opacity: 0; visibility: hidden; }
+}
+
 .carrusel {
     position: relative;
     height: 450px;
@@ -653,7 +661,10 @@ footer a {
 }
 
 .carrusel img {
+    width: 100%;
     height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .carrusel1 {
