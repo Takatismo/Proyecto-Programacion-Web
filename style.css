@@ -640,7 +640,7 @@ footer a {
 
 .carta>p {
     font-size: 1.6rem;
-    color: var(--primary-color);
+    color: var(--dark-color);
     font-weight: 500;
 }
 
