@@ -812,7 +812,7 @@ footer a {
     }
 
     .btn-reserva {
-        color: #110c09;
+        color: #f5ede3;
     }
 
     .btn-reserva:hover {
@@ -829,6 +829,11 @@ footer a {
         .lugar span {
             color: #f5ecd9;
         }
+
+        .container-reservas h2{
+            color: #f5ecd9;
+        }
+        
 }
 
 
