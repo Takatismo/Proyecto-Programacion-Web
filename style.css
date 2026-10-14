@@ -413,6 +413,10 @@ td {
     gap: 20px;
 }
 
+.txt-produ{
+    color : #3f2e26;
+}
+
 .productos article {
     background-color: #ffffff;
     padding: 15px;
