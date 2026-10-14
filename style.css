@@ -209,8 +209,10 @@ footer {
     margin-bottom: 3rem;
 }
 
+/* Formulario (tarjeta oscura como en tu captura) */
 .form-reserva {
-    background-color: #fff;
+    background-color: var(--dark-color);
+    color: var(--background-color);
     padding: 3rem;
     border-radius: 1rem;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -222,6 +224,7 @@ footer {
     text-align: left;
 }
 
+/* Campos */
 .campo {
     display: flex;
     flex-direction: column;
@@ -233,6 +236,7 @@ footer {
     margin-bottom: 0.8rem;
 }
 
+.campo input:not([type="checkbox"]),
 .campo select,
 .campo textarea {
     font-family: 'Poppins', sans-serif;
@@ -243,22 +247,13 @@ footer {
     outline: none;
 }
 
+.campo input:not([type="checkbox"]):focus,
 .campo select:focus,
 .campo textarea:focus {
     border-color: var(--primary-color);
 }
 
-.btn-reserva {
-    grid-column: 1 / 3;
-    border: none;
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 1.3rem;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    border-radius: 0.5rem;
-}
+/* Selección de lugar */
 .lugares-titulo {
     font-size: 1.6rem;
     font-weight: 700;
@@ -299,10 +294,29 @@ footer {
     width: 2.2rem;
     height: 2.2rem;
     cursor: pointer;
+    accent-color: var(--primary-color);
 }
 
 .lugar input:checked + img {
     border-color: var(--primary-color);
+}
+
+/* Botón */
+.btn-reserva {
+    grid-column: 1 / 3;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.btn-reserva:hover {
+    opacity: 0.9;
 }
 
 /* INICIOOOOO  */
