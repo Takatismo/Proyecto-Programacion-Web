@@ -161,15 +161,10 @@ footer {
     margin-bottom: 0.8rem;
 }
 
-.campo input:not([type="checkbox"]),
-.campo select,
-.campo textarea {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.4rem;
-    padding: 1.2rem;
-    border: 1px solid #6e3c3c;
-    border-radius: 0.5rem;
-    outline: none;
+.campo input:not([type="checkbox"]):focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: var(--primary-color);
 }
 
 .campo input:not([type="checkbox"]):focus,
