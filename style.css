@@ -409,8 +409,8 @@ td {
     gap: 20px;
 }
 
-.txt-produ{
-    color : #3f2e26;
+.txt-produ {
+    color: #3f2e26;
 }
 
 .productos article {
@@ -789,6 +789,10 @@ footer a {
         color: var(--primary-color);
     }
 
+    .carta>p {
+        color: #f4efe3;
+    }
+
     .container-reservas h2 {
         color: #1c1410;
     }
@@ -813,14 +817,14 @@ footer a {
 
     footer {
         background-color: #0b0705;
-            border-top: 2px solid var(--primary-color);
-        }
-        
-        .campo label,
-        .lugares-titulo,
-        .lugar span {
-            color: #f5ecd9;
-        }
+        border-top: 2px solid var(--primary-color);
+    }
+
+    .campo label,
+    .lugares-titulo,
+    .lugar span {
+        color: #f5ecd9;
+    }
 }
 
 
@@ -831,7 +835,7 @@ footer a {
         text-align: center;
     }
 
-    
+
     .productos {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -904,6 +908,7 @@ footer a {
 }
 
 @media (max-width: 560px) {
+
     .productos,
     .carta .productos {
         grid-template-columns: 1fr;
