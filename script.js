@@ -43,3 +43,9 @@ if (mensaje !== "Edad inválida") {
     console.log("Categoría:", mensaje);
     console.log("Descuento:", descuento * 100 + "%");
 }
+
+let edades = [10, 20, 25, 30];
+
+for (let i = 0; i < edades.length; i++) {
+    console.log(edades[i]);
+}
