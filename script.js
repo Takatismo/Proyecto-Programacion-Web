@@ -26,3 +26,14 @@ let pos = notas.indexOf(20);
 if (pos !== -1) {
   console.log(`¡Existe nota perfecta en posición ${pos}!`);
 }
+const servidores = ['SRV-WEB', 'SRV-DB', 'SRV-APP'];
+
+// Iteración tradicional con índice
+for (let i = 0; i < servidores.length; i++) {
+  console.log(servidores[i]);
+}
+
+// Iteración moderna con for...of
+for (const srv of servidores) {
+  console.log(`Servidor activo: ${srv}`);
+}
