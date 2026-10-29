@@ -46,6 +46,6 @@ if (mensaje !== "Edad inválida") {
 
 let edades = [10, 20, 25, 30];
 
-for (let i = 0; i < edades.length; i++) {
+for (let i = 1; i < edades.length; i++) {
     console.log(edades[i]);
 }
