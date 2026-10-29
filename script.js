@@ -10,4 +10,19 @@ while (continuar) {
     } else {
         alert ('Nota invalida. Ingrese un valor dentro de 0 y 20.')
     }
+    continuar = confirm(desea registrar otra nota)
+}
+
+// Calcular promedio de notas del array
+let suma = 0;
+for (let i = 0; i < notas.length; i++) {
+  suma += notas[i];
+}
+let promedio = suma / notas.length;
+alert(`Promedio general: ${promedio.toFixed(2)}`);
+
+// Verificar existencia de nota 20
+let pos = notas.indexOf(20);
+if (pos !== -1) {
+  console.log(`¡Existe nota perfecta en posición ${pos}!`);
 }
