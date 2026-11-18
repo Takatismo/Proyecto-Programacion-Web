@@ -1261,43 +1261,6 @@ body.modo-oscuro {
     background: #b4531f;
     transform: translateY(-5px);
 }
-
-#calificacion {
-    text-align: center;
-    padding: 30px;
-    margin: 30px auto;
-    background: #f5eee7;
-    border-radius: 15px;
-    max-width: 450px;
-}
-
-#calificacion h3 {
-    color: #5c3825;
-    margin-bottom: 15px;
-}
-
-.estrellas button {
-    border: none;
-    background: none;
-    color: #aaa;
-    font-size: 38px;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.estrellas button:hover {
-    transform: scale(1.2);
-}
-
-.estrellas button.seleccionada {
-    color: #f5b301;
-}
-
-#calificacion p {
-    color: #5c3825;
-    margin-top: 12px;
-}
-
 /* ABIERTO O CERRADO */
 .contenedor-estado {
     display: flex;
@@ -1401,4 +1364,39 @@ body.modo-oscuro .btn-tema:hover {
         font-size: 1.3rem;
         padding: 1rem 1.5rem;
     }
+}
+#calificacion {
+    text-align: center;
+    padding: 30px;
+    margin: 30px auto;
+    background: #f5eee7;
+    border-radius: 15px;
+    max-width: 450px;
+}
+
+#calificacion h3 {
+    color: #5c3825;
+    margin-bottom: 15px;
+}
+
+.estrellas button {
+    border: none;
+    background: none;
+    color: #aaa;
+    font-size: 38px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.estrellas button:hover {
+    transform: scale(1.2);
+}
+
+.estrellas button.seleccionada {
+    color: #f5b301;
+}
+
+#calificacion p {
+    color: #5c3825;
+    margin-top: 12px;
 }
