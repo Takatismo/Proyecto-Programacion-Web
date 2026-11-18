@@ -62,31 +62,42 @@ const nombresLugar = {
     "salon-2": "Salón 2"
 };
 
-formReserva.addEventListener("submit", (e) => {
-    e.preventDefault();
 
-    const nombre = document.querySelector("#nombre").value.trim();
-    const telefono = document.querySelector("#telefono").value.trim();
-    const personas = document.querySelector("#personas").value;
-    const hora = document.querySelector("#hora").value;
+const formReserva = document.querySelector(".form-reserva");
 
-    const fecha = document.querySelector("#fecha").value.split("-").reverse().join("/");
+if (formReserva) {
+    const nombresLugar = {
+        "terraza": "Terraza",
+        "salon-1": "Salón 1",
+        "salon-2": "Salón 2"
+    };
 
-    const lugarElegido = formReserva.querySelector('input[name="lugar"]:checked');
-    const lugar = lugarElegido ? nombresLugar[lugarElegido.value] : "Sin elegir";
+    formReserva.addEventListener("submit", (e) => {
+        e.preventDefault();
 
-    abrirModal(`
-        <h2 id="modalTitulo">¡Reserva recibida!</h2>
-        <ul class="modal-lista">
-            <li><strong>Nombre:</strong> ${escaparHTML(nombre)}</li>
-            <li><strong>Teléfono:</strong> ${escaparHTML(telefono)}</li>
-            <li><strong>Fecha:</strong> ${escaparHTML(fecha)}</li>
-            <li><strong>Hora:</strong> ${escaparHTML(hora)}</li>
-            <li><strong>Personas:</strong> ${escaparHTML(personas)}</li>
-            <li><strong>Lugar:</strong> ${escaparHTML(lugar)}</li>
-        </ul>
-        <button type="button" class="boton" data-cerrar>Aceptar</button>`);
+        const nombre = document.querySelector("#nombre").value.trim();
+        const telefono = document.querySelector("#telefono").value.trim();
+        const personas = document.querySelector("#personas").value;
+        const hora = document.querySelector("#hora").value;
 
-    console.log(`Reserva: ${nombre} | ${fecha} ${hora} | ${personas} personas | ${lugar}`);
-    formReserva.reset();
-});
+        const fecha = document.querySelector("#fecha").value.split("-").reverse().join("/");
+
+        const lugarElegido = formReserva.querySelector('input[name="lugar"]:checked');
+        const lugar = lugarElegido ? nombresLugar[lugarElegido.value] : "Sin elegir";
+
+        abrirModal(`
+            <h2 id="modalTitulo">¡Reserva recibida!</h2>
+            <ul class="modal-lista">
+                <li><strong>Nombre:</strong> ${escaparHTML(nombre)}</li>
+                <li><strong>Teléfono:</strong> ${escaparHTML(telefono)}</li>
+                <li><strong>Fecha:</strong> ${escaparHTML(fecha)}</li>
+                <li><strong>Hora:</strong> ${escaparHTML(hora)}</li>
+                <li><strong>Personas:</strong> ${escaparHTML(personas)}</li>
+                <li><strong>Lugar:</strong> ${escaparHTML(lugar)}</li>
+            </ul>
+            <button type="button" class="boton" data-cerrar>Aceptar</button>`);
+
+        console.log(`Reserva: ${nombre} | ${fecha} ${hora} | ${personas} personas | ${lugar}`);
+        formReserva.reset();
+    });
+}
