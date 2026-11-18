@@ -1298,7 +1298,7 @@ body.modo-oscuro {
     margin-top: 12px;
 }
 
-/* ===== Estado del local (alerta) ===== */
+/* ABIERTO O CERRADO */
 .contenedor-estado {
     display: flex;
     justify-content: center;
@@ -1310,8 +1310,7 @@ body.modo-oscuro {
     align-items: center;
     gap: 0.8rem;
     padding: 0.8rem 1.8rem;
-    border-radius: 999px;
-    border: 1px solid;
+    border-radius: 700px;
     font-size: 1.4rem;
     font-weight: 600;
 }
@@ -1320,7 +1319,6 @@ body.modo-oscuro {
     display: none;
 }
 
-/* El puntito */
 .estado-local::before {
     content: "";
     width: 1rem;
@@ -1341,7 +1339,7 @@ body.modo-oscuro {
     border-color: #efb7b0;
 }
 
-/* El punto verde parpadea suave cuando está abierto */
+
 .estado-local.abierto::before {
     animation: latido 1.6s ease-in-out infinite;
 }
@@ -1351,7 +1349,7 @@ body.modo-oscuro {
     50% { opacity: 0.4; transform: scale(0.7); }
 }
 
-/* Modo oscuro */
+/* Modo oscuro 
 body.modo-oscuro .estado-local.abierto {
     background-color: rgba(46, 160, 90, 0.15);
     color: #6fdc9a;
@@ -1366,4 +1364,4 @@ body.modo-oscuro .estado-local.cerrado {
 
 @media (prefers-reduced-motion: reduce) {
     .estado-local.abierto::before { animation: none; }
-}
+}*/
