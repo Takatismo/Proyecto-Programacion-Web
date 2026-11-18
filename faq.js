@@ -1,5 +1,4 @@
-// faq.js: preguntas frecuentes con acordeón (solo index.html)
-// Al hacer clic en una pregunta se abre su respuesta
+
 const itemsFaq = document.querySelectorAll(".faq-item");
 
 function abrirItem(item) {

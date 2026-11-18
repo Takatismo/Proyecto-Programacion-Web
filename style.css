@@ -55,8 +55,6 @@ html {
     text-decoration: none;
 }
 
-
-
 .container-logo {
     display: flex;
     align-items: center;
@@ -67,7 +65,6 @@ html {
     font-size: 3.6rem;
     line-height: 1.1;
 }
-
 
 .container-nav {
     background-color: var(--primary-color);
@@ -97,11 +94,9 @@ html {
     position: relative;
 }
 
-
 .menu a:hover {
     color: #fff;
 }
-
 
 footer {
     background: #2c1e16;
@@ -109,7 +104,6 @@ footer {
     padding: 30px 20px 15px;
     margin-top: 40px;
 }
-
 
 .reservas {
     background-color: var(--background-color);
@@ -124,7 +118,6 @@ footer {
     color: #3a2d28;
     font-size: 1.6rem;
 }
-
 
 .form-reserva {
     color: #f5ecd9;
@@ -256,12 +249,6 @@ footer {
     opacity: 0.9;
 }
 
-/* INICIOOOOO  */
-/* INICIOOOOO  */
-/* INICIOOOOO  */
-/* INICIOOOOO   */
-
-
 * {
     margin: 0;
     padding: 0;
@@ -294,7 +281,6 @@ main {
     margin: 0 auto;
     padding: 20px;
 }
-
 
 .logo {
     display: block;
@@ -505,7 +491,6 @@ td {
     outline: none;
 }
 
-
 .btn-reserva {
     grid-column: 1 / -1;
     background-color: #b4531f;
@@ -521,7 +506,6 @@ td {
 .btn-reserva:hover {
     background-color: #8a3d14;
 }
-
 
 footer {
     background-color: #3f2e26;
@@ -614,13 +598,6 @@ footer a {
     background-color: rgba(63, 46, 38, 0.75);
 }
 
-/* Segundo avance  */
-/* Segundo avance  */
-/* Segundo avance  */
-/* Segundo avance  */
-/* Segundo avance  */
-/* Segundo avance  */
-
 .carta {
     max-width: 120rem;
     margin: 0 auto;
@@ -654,7 +631,6 @@ footer a {
     margin: 2.5rem 0 1.5rem;
 }
 
-
 .productos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -684,7 +660,6 @@ footer a {
     background-color: #e6dccf;
     margin-bottom: 1.5rem;
 }
-
 
 .productos strong {
     display: block;
@@ -732,6 +707,190 @@ footer a {
     padding: 1rem;
 }
 
+.btn-menu {
+    display: none;
+    position: relative;
+    z-index: 2;
+    width: 4.4rem;
+    height: 4.4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-menu span {
+    display: block;
+    width: 2.6rem;
+    height: 0.3rem;
+    background-color: var(--dark-color);
+    border-radius: 0.2rem;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-menu.activo span {
+    background-color: #f5ede3;
+}
+
+.btn-menu.activo span:nth-child(1) {
+    transform: translateY(0.8rem) rotate(45deg);
+}
+
+.btn-menu.activo span:nth-child(2) {
+    opacity: 0;
+}
+
+.btn-menu.activo span:nth-child(3) {
+    transform: translateY(-0.8rem) rotate(-45deg);
+}
+
+.btn-menu:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+.fondo-menu {
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.fondo-menu.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-fondo {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+
+.modal-fondo.activo {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity 0.3s ease;
+}
+
+.modal-caja {
+    position: relative;
+    width: 100%;
+    max-width: 50rem;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 3rem;
+    background-color: #f9f5f0;
+    color: #3f2e26;
+    border-radius: 1.2rem;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.modal-fondo.activo .modal-caja {
+    transform: scale(1);
+}
+
+.modal-cerrar {
+    position: absolute;
+    top: 1rem;
+    right: 1.4rem;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    background: none;
+    color: inherit;
+    font-size: 3.2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.modal-cerrar:hover {
+    color: #b4531f;
+}
+
+.modal-cerrar:focus-visible,
+.modal-caja .boton:focus-visible {
+    outline: 2px solid #b4531f;
+    outline-offset: 2px;
+}
+
+.modal-caja img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    background-color: #e6dccf;
+    margin-bottom: 1.5rem;
+}
+
+.modal-caja h2 {
+    font-size: 2.6rem;
+    margin: 0 4rem 1rem 0;
+}
+
+.modal-caja p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.modal-precio {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #b4531f;
+}
+
+.modal-lista {
+    list-style: none;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.modal-lista li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #d9c3a0;
+}
+
+.modal-caja .boton {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.6rem;
+}
+
+.carta .productos>div {
+    cursor: pointer;
+}
+
+.carta .productos>div:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
+body.modal-abierto,
+body.menu-abierto {
+    overflow: hidden;
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         --primary-color: #e8a54b;
@@ -775,6 +934,25 @@ footer a {
         color: var(--primary-color);
     }
 
+    .btn-menu span {
+        background-color: #f5ede3;
+    }
+
+    .modal-caja {
+        background-color: #1c1410;
+        color: #f5ede3;
+        border: 1px solid #3a2a20;
+    }
+
+    .modal-caja h2,
+    .modal-precio,
+    .modal-cerrar:hover {
+        color: var(--primary-color);
+    }
+
+    .modal-lista li {
+        border-bottom-color: #3a2a20;
+    }
 
     .productos div {
         border: 1px solid #2e211a;
@@ -810,7 +988,6 @@ footer a {
         border-color: #3a2a20;
     }
 
-
     .btn-reserva:hover {
         background-color: #f2b968;
     }
@@ -827,7 +1004,6 @@ footer a {
     }
 }
 
-
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
@@ -835,27 +1011,92 @@ footer a {
         text-align: center;
     }
 
-
     .productos {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .search-form {
-        display: none;
-    }
-
-    .navbar .fa-bars {
-        display: none;
+    .container-nav {
+        position: sticky;
+        top: 0;
+        z-index: 100;
     }
 
     .navbar {
-        justify-content: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    .btn-menu {
+        display: flex;
+        order: 2;
+    }
+
+    .search-form {
+        order: 1;
+        height: 3.4rem;
+    }
+
+    .search-form input {
+        width: 16rem;
     }
 
     .menu {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem 2rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 26rem;
+        height: 100vh;
+        height: 100dvh;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 0;
+        margin-top: 0;
+        padding: 8rem 2rem 2rem;
+        overflow-y: auto;
+        background-color: #2c1e16;
+        box-shadow: -0.5rem 0 2rem rgba(0, 0, 0, 0.4);
+        transform: translateX(100%);
+        visibility: hidden;
+        transition: transform 0.3s ease, visibility 0s linear 0.3s;
+    }
+
+    .menu.activo {
+        transform: translateX(0);
+        visibility: visible;
+        transition: transform 0.3s ease;
+    }
+
+    .menu a {
+        display: block;
+        padding: 1.4rem 1rem;
+        font-size: 1.6rem;
+        color: #f5ede3;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .menu a:hover {
+        color: var(--primary-color);
+    }
+
+    .menu .btn-tema {
+        width: 100%;
+        margin-top: 2rem;
+        padding: 1rem;
+        font-family: inherit;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #f5ede3;
+        background: transparent;
+        border: 1px solid var(--primary-color);
+        border-radius: 0.6rem;
+        cursor: pointer;
+    }
+
+    .menu .btn-tema:hover {
+        background-color: var(--primary-color);
+        color: #151515;
     }
 
     .reservas {
@@ -904,6 +1145,10 @@ footer a {
 
     .texto-logo p {
         font-size: 1.1rem;
+    }
+
+    .modal-caja {
+        padding: 2.5rem 2rem;
     }
 }
 
@@ -985,7 +1230,12 @@ footer a {
 
 @media (prefers-reduced-motion: reduce) {
     .faq-respuesta,
-    .faq-icono {
+    .faq-icono,
+    .menu,
+    .fondo-menu,
+    .btn-menu span,
+    .modal-fondo,
+    .modal-caja {
         transition: none;
     }
 }
@@ -1003,7 +1253,7 @@ footer a {
     font-size: 28px;
     cursor: pointer;
     display: none;
-    z-index: 9999;
+    z-index: 90;
     transition: 0.3s;
 }
 
@@ -1047,4 +1297,3 @@ footer a {
     color: #5c3825;
     margin-top: 12px;
 }
-

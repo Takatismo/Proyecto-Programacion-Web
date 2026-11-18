@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -8,8 +8,7 @@
     <link rel="icon" href="imagenes/La_Masseria.ico">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-<script src="carta.js" defer></script>
-</head>
+</head> 
 
 <body>
     <header>
@@ -27,268 +26,275 @@
                 </div>
 
                 <div class="container-logo">
-                <a href="index.html">
-                    <img class="logo" src="imagenes/logo.jpg" alt="Logo La Masseria">
-                </a>
-                <div class="texto-logo">
-                    <h1>LA MASSERIA</h1>
-                    <p>Pasteles, bocaditos y café</p>
+                    <a href="index.html">
+                        <img class="logo" src="imagenes/logo.jpg" alt="Logo La Masseria">
+                    </a>
+                    <div class="texto-logo">
+                        <h1>LA MASSERIA</h1>
+                        <p>Pasteles, bocaditos y café</p>
+                    </div>
                 </div>
+                <div class="relleno centrado"></div>
             </div>
-            <div class="relleno centrado"></div>
         </div>
-
-        <div class="container-nav">
-            <nav class="navbar container">
-                <i class="fa-solid fa-bars"></i>
-
-                <ul class="menu">
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="carta.html">CARTA</a></li>
-                    <li><a href="https://wa.link/osl37h">CONTACTANOS</a></li>
-                    <li><a href="#reservar" class="btn-reservar">RESERVAR</a></li>
-                    <li><button class="btn-tema" id="btnTema">Modo oscuro</button></li>
-                </ul>
-
-
-                <form class="search-form">
-                    <input type="search" placeholder="Buscar..." />
-                    <button class="btn-search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-            </nav>
-        </div>
-
-        <div class="relleno centrado">
-            <span id="estadoLocal" class="estado-local"></span>
-        </div>
-
     </header>
+
+    <div class="container-nav">
+        <nav class="navbar container" aria-label="Menú principal">
+
+            <button type="button" id="btnMenu" class="btn-menu" aria-expanded="false"
+                aria-controls="menuPrincipal" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="menu" id="menuPrincipal">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="carta.html">CARTA</a></li>
+                <li><a href="https://wa.link/osl37h">CONTACTANOS</a></li>
+                <li><a href="index.html#reservar" class="btn-reservar">RESERVAR</a></li>
+                <li><button class="btn-tema" id="btnTema">Modo oscuro</button></li>
+            </ul>
+
+            <form class="search-form">
+                <input type="search" placeholder="Buscar..." />
+                <button class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </nav>
+    </div>
+
+    <div id="fondoMenu" class="fondo-menu"></div>
+
+    <div class="relleno centrado">
+        <span id="estadoLocal" class="estado-local"></span>
+    </div>
 
     <main>
         <section class="carta">
             <h2>Nuestra Carta</h2>
             <p>Descubre nuestras especialidades</p>
 
-            <h3>Minisándwiches</h3>
-            <div class="productos">
-                <div>
-                    <img src="imagenes/productos/butifarra.svg " alt="Butifarra">
-                    <strong>Butifarra</strong>
-                    <p>Jamón del país con salsa criolla</p>
-                    <span>S/ 2.50</span>
+                <h3>Minisándwiches</h3>
+                <div class="productos">
+                    <div>
+                        <img src="imagenes/productos/butifarra.svg" alt="Butifarra">
+                        <strong>Butifarra</strong>
+                        <p>Jamón del país con salsa criolla</p>
+                        <span>S/ 2.50</span>
+                    </div>
+                    <div>
+                        <img src="imagenes/productos/pitipanes.svg" alt="Petitpan con pollo">
+                        <strong>Petitpan con pollo</strong>
+                        <p>Pollo deshilachado con mayonesa de la casa</p>
+                        <span>S/ 2.50</span>
+                    </div>
+                    <div>
+                        <img src="imagenes/productos/Prosciutto.svg" alt="Prosciutto">
+                        <strong>Prosciutto</strong>
+                        <p>Prosciutto italiano con queso crema</p>
+                        <span>S/ 4.00</span>
+                    </div>
+                    <div>
+                        <img src="imagenes/productos/Capresse.svg" alt="Caprese">
+                        <strong>Caprese</strong>
+                        <p>Mozarella, tomate y albahaca</p>
+                        <span>S/ 2.20</span>
+                    </div>
                 </div>
-                <div>
-                    <img src="imagenes/productos/pitipanes.svg" alt="Petitpan con pollo">
-                    <strong>Petitpan con pollo</strong>
-                    <p>Pollo deshilachado con mayonesa de la casa</p>
-                    <span>S/ 2.50</span>
-                </div>
-                <div>
-                    <img src="imagenes/productos/Prosciutto.svg" alt="Prosciutto">
-                    <strong>Prosciutto</strong>
-                    <p>Prosciutto italiano con queso crema</p>
-                    <span>S/ 4.00</span>
-                </div>
-                <div>
-                    <img src="imagenes/productos/Capresse.svg" alt="Caprese">
-                    <strong>Caprese</strong>
-                    <p>Mozarella, tomate y albahaca</p>
-                    <span>S/ 2.20</span>
-                </div>
-            </div>
 
-            <h3>Pasteles salados</h3>
-            <div class="productos">
-                <div>
-                    <img src="imagenes/productos/Empanada de lomo fino.svg" alt="Empanada de lomo fino">
-                    <strong>Empanada de lomo fino</strong>
-                    <p>Empanada rellena de lomo fino</p>
-                    <span>S/ 9.00</span>
+                <h3>Pasteles salados</h3>
+                <div class="productos">
+                    <div>
+                        <img src="imagenes/productos/Empanada de lomo fino.svg" alt="Empanada de lomo fino">
+                        <strong>Empanada de lomo fino</strong>
+                        <p>Empanada rellena de lomo fino</p>
+                        <span>S/ 9.00</span>
+                    </div>
+                    <div>
+                        <img src="imagenes/productos/empanada de carne.svg" alt="Empanada de carne">
+                        <strong>Empanada de carne</strong>
+                        <p>Empanada rellena de carne</p>
+                        <span>S/ 8.00</span>
+                    </div>
+                    <div>
+                        <img src="imagenes/productos/empanada de pollo2.svg" alt="Empanada de pollo">
+                        <strong>Empanada de pollo</strong>
+                        <p>Empanada rellena de pollo</p>
+                        <span>S/ 8.00</span>
+                    </div>
+                    <div>
+                        <img src="imagenes/productos/Empanada de queso.svg" alt="Empanada de queso">
+                        <strong>Empanada de queso</strong>
+                        <p>Empanada rellena de queso</p>
+                        <span>S/ 7.00</span>
+                    </div>
+                    <div>
+                        <img src="imagenes/productos/Empanada mixta.svg" alt="Empanada mixta">
+                        <strong>Empanada mixta</strong>
+                        <p>Empanada rellena de carne, pollo y queso</p>
+                        <span>S/ 8.00</span>
+                    </div>
                 </div>
-                <div>
-                    <img src="imagenes/productos/empanada de carne.svg" alt="Empanada de carne">
-                    <strong>Empanada de carne</strong>
-                    <p>Empanada rellena de carne</p>
-                    <span>S/ 8.00</span>
-                </div>
-                <div>
-                    <img src="imagenes/productos/empanada de pollo2.svg" alt="Empanada de pollo">
-                    <strong>Empanada de pollo</strong>
-                    <p>Empanada rellena de pollo</p>
-                    <span>S/ 8.00</span>
-                </div>
-                <div>
-                    <img src="imagenes/productos/Empanada de queso.svg" alt="Empanada de queso">
-                    <strong>Empanada de queso</strong>
-                    <p>Empanada rellena de queso</p>
-                    <span>S/ 7.00</span>
-                </div>
-                <div>
-                    <img src="imagenes/productos/Empanada mixta.svg" alt="Empanada mixta">
-                    <strong>Empanada mixta</strong>
-                    <p>Empanada rellena de carne, pollo y queso</p>
-                    <span>S/ 8.00</span>
-                </div>
-            </div>
 
+                <h3>Bocaditos</h3>
+                <h4>Dulces</h4>
+                <div class="productos">
+                    <div>
+                        <img src="imagenes/productos/alfajorcito de miel.svg" alt="Alfajorcito de miel">
+                        <strong>Alfajorcito de miel</strong>
+                        <p>Alfajor suave relleno de miel</p>
+                        <span>S/ 1.50</span>
+                    </div>
+                    <div>
+                        <img src="imagenes/productos/alfajor de manjar.svg" alt="Alfajorcito de manjar">
+                        <strong>Alfajorcito de manjar</strong>
+                        <p>Alfajor suave relleno de manjar</p>
+                        <span>S/ 1.50</span>
+                    </div>
+                </div>
 
-            <h3>Bocaditos</h3>
-            <h4>Dulces</h4>
-            <div class="productos">
-                <div>
-                    <img src="imagenes/productos/alfajorcito de miel.svg" alt="Alfajorcito de miel">
-                    <strong>Alfajorcito de miel</strong>
-                    <p>Alfajor suave relleno de miel</p>
-                    <span>S/ 1.50</span>
+                <h4>Salados</h4>
+                <div class="productos">
+                    <div>
+                        <img src="imagenes/productos/Empanadita de carne.svg" alt="Empanadita de carne">
+                        <strong>Empanadita de carne</strong>
+                        <p>Mini empanada rellena de carne</p>
+                        <span>S/ 1.50</span>
+                    </div>
+                    <div>
+                        <img src="imagenes/productos/Empanadita de pollo.svg" alt="Empanadita de pollo">
+                        <strong>Empanadita de pollo</strong>
+                        <p>Mini empanada rellena de pollo</p>
+                        <span>S/ 1.50</span>
+                    </div>
                 </div>
-                <div>
-                    <img src="imagenes/productos/alfajor de manjar.svg" alt="Alfajorcito de manjar">
-                    <strong>Alfajorcito de manjar</strong>
-                    <p>Alfajor suave relleno de manjar</p>
-                    <span>S/ 1.50</span>
-                </div>
-            </div>
-            <h4>Salados</h4>
-            <div class="productos">
-                <div>
-                    <img src="imagenes/productos/Empanadita de carne.svg" alt="Empanadita de carne">
-                    <strong>Empanadita de carne</strong>
-                    <p>Mini empanada rellena de carne</p>
-                    <span>S/ 1.50</span>
-                </div>
-                <div>
-                    <img src="imagenes/productos/Empanadita de pollo.svg" alt="Empanadita de pollo">
-                    <strong>Empanadita de pollo</strong>
-                    <p>Mini empanada rellena de pollo</p>
-                    <span>S/ 1.50</span>
-                </div>
-            </div>
 
+                <h3>Bebidas</h3>
+                <h4>Calientes</h4>
+                <div class="productos">
+                    <div>
+                        <img src="imagenes/productos/expresso.svg" alt="Café expresso">
+                        <strong>Café expresso</strong>
+                        <p>Café concentrado, intenso y aromático</p>
+                        <span>S/ 6.00</span>
+                    </div>
+                    <div>
+                        <img src="imagenes/productos/Cafe Americano.svg" alt="Café americano">
+                        <strong>Café americano</strong>
+                        <p>Espresso con agua caliente</p>
+                        <span>S/ 7.00</span>
+                    </div>
+                    <div>
+                        <img src="imagenes/productos/Café con leche.svg" alt="Café con leche">
+                        <strong>Café con leche</strong>
+                        <p>Café suave con leche caliente</p>
+                        <span>S/ 10.00</span>
+                    </div>
+                    <div>
+                        <img src="imagenes/productos/Capuccino.svg" alt="Café cappuccino">
+                        <strong>Café cappuccino</strong>
+                        <p>Espresso con leche y espuma</p>
+                        <span>S/ 10.00</span>
+                    </div>
+                    <div>
+                        <img src="imagenes/productos/Latte.svg" alt="Café latte">
+                        <strong>Café latte</strong>
+                        <p>Espresso con leche vaporizada</p>
+                        <span>S/ 10.00</span>
+                    </div>
+                    <div>
+                        <img src="imagenes/productos/Mocca.svg" alt="Café mocaccino">
+                        <strong>Café mocaccino</strong>
+                        <p>Espresso con chocolate y leche</p>
+                        <span>S/ 11.00</span>
+                    </div>
+                </div>
 
-            <h3>Bebidas</h3>
-            <h4>Calientes</h4>
-            <div class="productos">
-                <div>
-                    <img src="imagenes/productos/expresso.svg" alt="Café expresso">
-                    <strong>Café expresso</strong>
-                    <p>Café concentrado, intenso y aromático</p>
-                    <span>S/ 6.00</span>
+                <h4>Jugos</h4>
+                <div class="productos">
+                    <div>
+                        <img src="imagenes/productos/jugo de papaya.svg" alt="Jugo de papaya">
+                        <strong>Jugo de papaya</strong>
+                        <p>Jugo natural de papaya</p>
+                        <span>S/ 10.00</span>
+                    </div>
+                    <div>
+                        <img src="imagenes/productos/Jugo de piña.svg" alt="Jugo de piña">
+                        <strong>Jugo de piña</strong>
+                        <p>Jugo natural de piña</p>
+                        <span>S/ 10.00</span>
+                    </div>
+                    <div>
+                        <img src="imagenes/productos/jugo de mango.svg" alt="Jugo de mango">
+                        <strong>Jugo de mango</strong>
+                        <p>Jugo natural de mango</p>
+                        <span>S/ 10.00</span>
+                    </div>
+                    <div>
+                        <img src="imagenes/productos/jugo de fresa.svg" alt="Jugo de fresa">
+                        <strong>Jugo de fresa</strong>
+                        <p>Jugo natural de fresa</p>
+                        <span>S/ 12.50</span>
+                    </div>
                 </div>
-                <div>
-                    <img src="imagenes/productos/Cafe Americano.svg" alt="Café americano">
-                    <strong>Café americano</strong>
-                    <p>Espresso con agua caliente</p>
-                    <span>S/ 7.00</span>
-                </div>
-                <div>
-                    <img src="imagenes/productos/Café con leche.svg" alt="Café con leche">
-                    <strong>Café con leche</strong>
-                    <p>Café suave con leche caliente</p>
-                    <span>S/ 10.00</span>
-                </div>
-                <div>
-                    <img src="imagenes/productos/Capuccino.svg" alt="Café cappuccino">
-                    <strong>Café cappuccino</strong>
-                    <p>Espresso con leche y espuma</p>
-                    <span>S/ 10.00</span>
-                </div>
-                <div>
-                    <img src="imagenes/productos/Latte.svg" alt="Café latte">
-                    <strong>Café latte</strong>
-                    <p>Espresso con leche vaporizada</p>
-                    <span>S/ 10.00</span>
-                </div>
-                <div>
-                    <img src="imagenes/productos/Mocca.svg" alt="Café mocaccino">
-                    <strong>Café mocaccino</strong>
-                    <p>Espresso con chocolate y leche</p>
-                    <span>S/ 11.00</span>
-                </div>
-            </div>
-            <h4>Jugos</h4>
-            <div class="productos">
-                <div>
-                    <img src="imagenes/productos/jugo de papaya.svg" alt="Jugo de papaya">
-                    <strong>Jugo de papaya</strong>
-                    <p>Jugo natural de papaya</p>
-                    <span>S/ 10.00</span>
-                </div>
-                <div>
-                    <img src="imagenes/productos/Jugo de piña.svg" alt="Jugo de piña">
-                    <strong>Jugo de piña</strong>
-                    <p>Jugo natural de piña</p>
-                    <span>S/ 10.00</span>
-                </div>
-                <div>
-                    <img src="imagenes/productos/jugo de mango.svg" alt="Jugo de mango">
-                    <strong>Jugo de mango</strong>
-                    <p>Jugo natural de mango</p>
-                    <span>S/ 10.00</span>
-                </div>
-                <div>
-                    <img src="imagenes/productos/jugo de fresa.svg" alt="Jugo de fresa">
-                    <strong>Jugo de fresa</strong>
-                    <p>Jugo natural de fresa</p>
-                    <span>S/ 12.50</span>
-                </div>
-            </div>
 
-            <h3>Postres</h3>
-            <div class="productos">
-                <div>
-                    <img src="imagenes/productos/Alfajor con miel.svg" alt="Alfajor con miel">
-                    <strong>Alfajor con miel</strong>
-                    <p>Alfajor suave relleno de miel</p>
-                    <span>S/ 4.00</span>
+                <h3>Postres</h3>
+                <div class="productos">
+                    <div>
+                        <img src="imagenes/productos/Alfajor con miel.svg" alt="Alfajor con miel">
+                        <strong>Alfajor con miel</strong>
+                        <p>Alfajor suave relleno de miel</p>
+                        <span>S/ 4.00</span>
+                    </div>
+                    <div>
+                        <img src="imagenes/productos/Alfajor con manjar blanco.svg" alt="Alfajor con manjar blanco">
+                        <strong>Alfajor con manjar blanco</strong>
+                        <p>Alfajor suave relleno de manjar blanco</p>
+                        <span>S/ 4.00</span>
+                    </div>
+                    <div>
+                        <img src="imagenes/productos/alfajor de maizena.svg" alt="Alfajor de maizena">
+                        <strong>Alfajor de maizena</strong>
+                        <p>Alfajor delicado de maizena</p>
+                        <span>S/ 4.50</span>
+                    </div>
+                    <div>
+                        <img src="imagenes/productos/tartaleta de fresa.svg" alt="Tartaleta de fresa">
+                        <strong>Tartaleta de fresa</strong>
+                        <p>Tartaleta con crema y fresas</p>
+                        <span>S/ 12.50</span>
+                    </div>
+                    <div>
+                        <img src="imagenes/productos/Tartaleta de manzana.svg" alt="Tartaleta de manzana">
+                        <strong>Tartaleta de manzana</strong>
+                        <p>Tartaleta con manzana caramelizada</p>
+                        <span>S/ 13.50</span>
+                    </div>
+                    <div>
+                        <img src="imagenes/productos/tartaleta de arandano.svg" alt="Tartaleta de arándano">
+                        <strong>Tartaleta de arándano</strong>
+                        <p>Tartaleta con arándanos frescos</p>
+                        <span>S/ 15.00</span>
+                    </div>
                 </div>
-                <div>
-                    <img src="imagenes/productos/Alfajor con manjar blanco.svg" alt="Alfajor con manjar blanco">
-                    <strong>Alfajor con manjar blanco</strong>
-                    <p>Alfajor suave relleno de manjar blanco</p>
-                    <span>S/ 4.00</span>
-                </div>
-                <div>
-                    <img src="imagenes/productos/alfajor de maizena.svg" alt="Alfajor de maizena">
-                    <strong>Alfajor de maizena</strong>
-                    <p>Alfajor delicado de maizena</p>
-                    <span>S/ 4.50</span>
-                </div>
-                <div>
-                    <img src="imagenes/productos/tartaleta de fresa.svg" alt="Tartaleta de fresa">
-                    <strong>Tartaleta de fresa</strong>
-                    <p>Tartaleta con crema y fresas</p>
-                    <span>S/ 12.50</span>
-                </div>
-                <div>
-                    <img src="imagenes/productos/Tartaleta de manzana.svg" alt="Tartaleta de manzana">
-                    <strong>Tartaleta de manzana</strong>
-                    <p>Tartaleta con manzana caramelizada</p>
-                    <span>S/ 13.50</span>
-                </div>
-                <div>
-                    <img src="imagenes/productos/tartaleta de arandano.svg" alt="Tartaleta de arándano">
-                    <strong>Tartaleta de arándano</strong>
-                    <p>Tartaleta con arándanos frescos</p>
-                    <span>S/ 15.00</span>
-                </div>
-            </div>
 
         </section>
     </main>
+
+    <footer>
+        <p>
+            La Masseria<br>
+            Av. Universitaria, Villa El Salvador, Lima<br>
+            Teléfono: (01) 734 9549 | WhatsApp: 912 594 051
+        </p>
+        <p>Síguenos en Instagram: <a href="https://www.instagram.com/lamasseria_/" target="_blank">@lamasseria_</a></p>
+        <p>&copy; 2026 La Masseria. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/e2bfc37a57.js" crossorigin="anonymous"></script>
 </body>
-
-<footer>
-    <p>
-        La Masseria<br>
-        Av. Universitaria, Villa El Salvador, Lima<br>
-        Teléfono: (01) 734 9549 | WhatsApp: 912 594 051
-    </p>
-    <p>Síguenos en Instagram: <a href="https://www.instagram.com/lamasseria_/" target="_blank">@lamasseria_</a></p>
-    <p>&copy; 2026 La Masseria. Todos los derechos reservados.</p>
-</footer>
-
-<script src="https://kit.fontawesome.com/e2bfc37a57.js" crossorigin="anonymous"></script>
 
 </html>
