@@ -13,19 +13,13 @@ function mostrarEstadoLocal() {
 
     const salonAbierto = minutosActuales >= 450 && minutosActuales < 1290;
 
-    const esFinDeSemana = diaSemana === 0 || diaSemana === 6;
-    let terrazaAbierta;
-    if (esFinDeSemana) {
-        terrazaAbierta = minutosActuales >= 450 && minutosActuales < 1260;
-    } else {
-        terrazaAbierta = minutosActuales >= 1020 && minutosActuales < 1260;
-    }
+    console.log(`Salón abierto: ${salonAbierto}`);
 
     if (salonAbierto) {
-        etiqueta.textContent = "● Abierto ahora · Salón hasta las 9:30 PM";
+        etiqueta.textContent = "Abierto ahora · Salón hasta las 9:30 PM";
         etiqueta.className = "estado-local abierto";
     } else {
-        etiqueta.textContent = "● Cerrado · Abrimos a las 7:30 AM";
+        etiqueta.textContent = "Cerrado · Abrimos a las 7:30 AM";
         etiqueta.className = "estado-local cerrado";
     }
 
@@ -46,6 +40,7 @@ btnTema.addEventListener("click", () => {
     }
     console.log(`Modo oscuro activo: ${esOscuro}`);
 });
+
 /// mi parte :v//
 const btnMenu = document.querySelector("#btnMenu");
 const menuPrincipal = document.querySelector("#menuPrincipal");
