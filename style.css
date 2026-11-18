@@ -1369,51 +1369,27 @@ body.modo-oscuro .btn-tema:hover {
     color: #151515;
 }
 
-.sin-resultados {
-    text-align: center;
-    margin-top: 3rem;
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #b4531f;
-    display: none; /* Oculto por defecto, el JS lo muestra */
-}
 
-/* Contenedor flotante del saludo */
 #contenedorSaludo {
     position: fixed;
     bottom: 2rem;
     left: 2rem;
-    z-index: 9999; /* Para que siempre esté por encima de todo */
+    z-index: 9999; 
     background-color: #ffffff;
     color: #3f2e26;
     padding: 1.5rem 2rem;
     border-radius: 1rem;
-    border-left: 5px solid #b4531f; /* Detalle naranja de La Masseria */
+    border-left: 3px solid #b4531f; 
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
-    
-    /* Animación inicial */
-    opacity: 0;
-    transform: translateX(-50px);
-    visibility: hidden;
-    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-/* Cuando JS le pone la clase .visible, aparece deslizándose */
-#contenedorSaludo.visible {
-    opacity: 1;
-    transform: translateX(0);
-    visibility: visible;
-}
-
-/* Adaptación para celulares */
 @media (max-width: 768px) {
     #contenedorSaludo {
         bottom: 1rem;
         left: 1rem;
-        right: 1rem; /* Ocupa todo el ancho en móvil */
+        right: 1rem; 
         font-size: 1.3rem;
         padding: 1rem 1.5rem;
     }

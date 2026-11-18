@@ -28,7 +28,6 @@ mostrarEstadoLocal();
 const btnTema = document.querySelector("#btnTema");
 
 if (btnTema) {
-    // Sincroniza el texto inicial con el estado real
     btnTema.textContent = document.body.classList.contains("modo-oscuro")
         ? "Modo claro"
         : "Modo oscuro";
