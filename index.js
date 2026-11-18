@@ -87,17 +87,6 @@ if (buscador && formBuscador) {
     });
 }
 
-
-
-const formReserva = document.querySelector(".form-reserva");
-
-const nombresLugar = {
-    "terraza": "Terraza",
-    "salon-1": "Salón 1",
-    "salon-2": "Salón 2"
-};
-
-
 const formReserva = document.querySelector(".form-reserva");
 
 if (formReserva) {
