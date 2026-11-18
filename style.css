@@ -891,14 +891,14 @@ body.menu-abierto {
     overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
+body.modo-oscuro {
+    & {
         --primary-color: #e8a54b;
         --background-color: #1c1410;
         color-scheme: dark;
     }
 
-    body {
+    & {
         background-color: #110c09;
         color: #f5ede3;
     }
