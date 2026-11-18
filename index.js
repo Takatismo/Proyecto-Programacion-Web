@@ -19,16 +19,22 @@ mostrarSaludo();
 
 const buscador = document.querySelector("#buscador");
 const formBuscador = document.querySelector(".search-form");
+const btnBuscar = document.querySelector("#btnBuscar");
+
+// Función para quitar tildes (para que "cafe" encuentre "Cafés")
+function quitarTildes(texto) {
+    return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+}
 
 if (buscador && formBuscador) {
     function filtrarProductos() {
-        const texto = buscador.value.toLowerCase().trim();
+        const texto = quitarTildes(buscador.value.trim());
         const tarjetas = document.querySelectorAll(".txt-produ");
         const aviso = document.querySelector("#sinResultados");
         let coincidencias = 0;
 
         for (let i = 0; i < tarjetas.length; i++) {
-            const nombre = tarjetas[i].querySelector("h3").textContent.toLowerCase();
+            const nombre = quitarTildes(tarjetas[i].querySelector("h3").textContent);
 
             if (nombre.includes(texto)) {
                 tarjetas[i].style.display = "";
@@ -39,20 +45,35 @@ if (buscador && formBuscador) {
         }
 
         if (aviso) {
-            aviso.textContent = coincidencias === 0
-                ? `No encontramos "${texto}". Prueba con café o pastel.`
-                : "";
+            if (coincidencias === 0) {
+                aviso.textContent = `No encontramos "${buscador.value}". Prueba con café o pastel.`;
+                aviso.style.display = "block";
+            } else {
+                aviso.textContent = "";
+                aviso.style.display = "none";
+            }
         }
-
-        console.log(`Búsqueda: "${texto}" | Coincidencias: ${coincidencias}`);
     }
 
+    // Busca mientras escribes
     buscador.addEventListener("input", filtrarProductos);
 
+    // Busca cuando haces clic en la lupa
+    if (btnBuscar) {
+        btnBuscar.addEventListener("click", (e) => {
+            e.preventDefault();
+            filtrarProductos();
+        });
+    }
+
+    // Evita que al presionar Enter se recargue la página
     formBuscador.addEventListener("submit", (e) => {
         e.preventDefault();
+        filtrarProductos();
     });
 }
+
+
 
 const formReserva = document.querySelector(".form-reserva");
 
