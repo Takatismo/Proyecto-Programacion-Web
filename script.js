@@ -15,10 +15,10 @@ function mostrarEstadoLocal() {
     const salonAbierto = minutosActuales >= 450 && minutosActuales < 1290;
 
     if (salonAbierto) {
-        etiqueta.textContent = "ABIERTO AHORA · Salón hasta las 9:30 PM";
+        etiqueta.textContent = "ABIERTO AHORA : Salón hasta las 9:30 PM";
         etiqueta.className = "estado-local abierto";
     } else {
-        etiqueta.textContent = "CERRADO · Abrimos a las 7:30 AM";
+        etiqueta.textContent = "CERRADO : Abrimos a las 7:30 AM";
         etiqueta.className = "estado-local cerrado";
     }
 
