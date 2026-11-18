@@ -16,6 +16,7 @@ function mostrarSaludo() {
 }
 mostrarSaludo();
 
+
 const buscador = document.querySelector("#buscador");
 const formBuscador = document.querySelector(".search-form");
 
