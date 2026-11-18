@@ -4,7 +4,6 @@ function escaparHTML(texto) {
     return caja.innerHTML.replaceAll('"', "&quot;");
 }
 
-/* ---------- 1. Estado abierto / cerrado ---------- */
 function mostrarEstadoLocal() {
     const etiqueta = document.querySelector("#estadoLocal");
     if (!etiqueta) return;
