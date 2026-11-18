@@ -32,9 +32,9 @@ const btnTema = document.querySelector("#btnTema");
 if (btnTema) {
     // Sincroniza el texto inicial con el estado real
     if (document.body.classList.contains("modo-oscuro")) {
-        btnTema.textContent = "Modo claro";
-    } else {
         btnTema.textContent = "Modo oscuro";
+    } else {
+        btnTema.textContent = "Modo claro";
     }
 
     btnTema.addEventListener("click", () => {
