@@ -1350,14 +1350,21 @@ body.modo-oscuro {
 }
 
 .btn-tema {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: var(--dark-color);
     background: transparent;
-    border: 2px solid var(--dark-color);
-    border-radius: 2rem;
+    border: 1px solid var(--dark-color);
+    border-radius: 1rem;
     padding: 0.6rem 1.4rem;
     cursor: pointer;
-    white-space: nowrap;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+
+body.modo-oscuro .btn-tema {
+    color: #f5ede3;
+    border-color: var(--primary-color);
+}
+
+body.modo-oscuro .btn-tema:hover {
+    background-color: var(--primary-color);
+    color: #151515;
 }

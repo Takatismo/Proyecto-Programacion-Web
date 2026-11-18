@@ -26,20 +26,16 @@ function mostrarEstadoLocal() {
 }
 mostrarEstadoLocal();
 
-/* ---------- 2. Modo oscuro / claro ---------- */
 const btnTema = document.querySelector("#btnTema");
 
 if (btnTema) {
     // Sincroniza el texto inicial con el estado real
-    if (document.body.classList.contains("modo-oscuro")) {
-        btnTema.textContent = "Modo oscuro";
-    } else {
-        btnTema.textContent = "Modo claro";
-    }
+    btnTema.textContent = document.body.classList.contains("modo-oscuro")
+        ? "Modo claro"
+        : "Modo oscuro";
 
     btnTema.addEventListener("click", () => {
         document.body.classList.toggle("modo-oscuro");
-
         const esOscuro = document.body.classList.contains("modo-oscuro");
         btnTema.textContent = esOscuro ? "Modo claro" : "Modo oscuro";
         console.log(`Modo oscuro activo: ${esOscuro}`);
