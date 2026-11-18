@@ -1368,3 +1368,12 @@ body.modo-oscuro .btn-tema:hover {
     background-color: var(--primary-color);
     color: #151515;
 }
+
+.sin-resultados {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #b4531f;
+    display: none; /* Oculto por defecto, el JS lo muestra */
+}
