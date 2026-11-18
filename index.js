@@ -1,6 +1,10 @@
 function mostrarSaludo() {
     const horaActual = new Date().getHours();
+    const cajaSaludo = document.querySelector("#contenedorSaludo");
     const saludo = document.querySelector("#saludo");
+    
+    if (!cajaSaludo || !saludo) return;
+
     let mensaje;
 
     if (horaActual < 12) {
@@ -12,8 +16,18 @@ function mostrarSaludo() {
     }
 
     saludo.textContent = mensaje;
-    console.log(`Hora actual: ${horaActual} | Mensaje: ${mensaje}`);
+
+    // Lo hacemos visible a los 1.5 segundos (para que la página cargue primero)
+    setTimeout(() => {
+        cajaSaludo.classList.add("visible");
+    }, 1500);
+
+    // Lo ocultamos a los 7 segundos (dura 5.5 segundos en pantalla)
+    setTimeout(() => {
+        cajaSaludo.classList.remove("visible");
+    }, 7000);
 }
+
 mostrarSaludo();
 
 
