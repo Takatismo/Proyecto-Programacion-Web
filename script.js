@@ -4,16 +4,15 @@ function escaparHTML(texto) {
     return caja.innerHTML.replaceAll('"', "&quot;");
 }
 
+/* ---------- 1. Estado abierto / cerrado ---------- */
 function mostrarEstadoLocal() {
     const etiqueta = document.querySelector("#estadoLocal");
+    if (!etiqueta) return;
 
     const ahora = new Date();
-    const diaSemana = ahora.getDay();
     const minutosActuales = ahora.getHours() * 60 + ahora.getMinutes();
 
     const salonAbierto = minutosActuales >= 450 && minutosActuales < 1290;
-
-    console.log(`Salón abierto: ${salonAbierto}`);
 
     if (salonAbierto) {
         etiqueta.textContent = "ABIERTO AHORA · Salón hasta las 9:30 PM";
@@ -23,23 +22,29 @@ function mostrarEstadoLocal() {
         etiqueta.className = "estado-local cerrado";
     }
 
-    console.log(`Salón abierto: ${salonAbierto} | Terraza abierta: ${terrazaAbierta}`);
+    console.log(`Salón abierto: ${salonAbierto}`);
 }
 mostrarEstadoLocal();
 
+/* ---------- 2. Modo oscuro / claro ---------- */
 const btnTema = document.querySelector("#btnTema");
 
-btnTema.addEventListener("click", () => {
-    document.body.classList.toggle("modo-oscuro");
-
-    const esOscuro = document.body.classList.contains("modo-oscuro");
-    if (esOscuro) {
+if (btnTema) {
+    // Sincroniza el texto inicial con el estado real
+    if (document.body.classList.contains("modo-oscuro")) {
         btnTema.textContent = "Modo claro";
     } else {
         btnTema.textContent = "Modo oscuro";
     }
-    console.log(`Modo oscuro activo: ${esOscuro}`);
-});
+
+    btnTema.addEventListener("click", () => {
+        document.body.classList.toggle("modo-oscuro");
+
+        const esOscuro = document.body.classList.contains("modo-oscuro");
+        btnTema.textContent = esOscuro ? "Modo claro" : "Modo oscuro";
+        console.log(`Modo oscuro activo: ${esOscuro}`);
+    });
+}
 
 /// mi parte :v//
 const btnMenu = document.querySelector("#btnMenu");
