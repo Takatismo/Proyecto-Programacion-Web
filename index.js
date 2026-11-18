@@ -20,35 +20,39 @@ mostrarSaludo();
 const buscador = document.querySelector("#buscador");
 const formBuscador = document.querySelector(".search-form");
 
-function filtrarProductos() {
-    const texto = buscador.value.toLowerCase();
-    const tarjetas = document.querySelectorAll(".txt-produ");
-    const aviso = document.querySelector("#sinResultados");
-    let coincidencias = 0;
+if (buscador && formBuscador) {
+    function filtrarProductos() {
+        const texto = buscador.value.toLowerCase().trim();
+        const tarjetas = document.querySelectorAll(".txt-produ");
+        const aviso = document.querySelector("#sinResultados");
+        let coincidencias = 0;
 
-    for (let i = 0; i < tarjetas.length; i++) {
-        const nombre = tarjetas[i].querySelector("h3").textContent.toLowerCase();
+        for (let i = 0; i < tarjetas.length; i++) {
+            const nombre = tarjetas[i].querySelector("h3").textContent.toLowerCase();
 
-        if (nombre.includes(texto)) {
-            tarjetas[i].style.display = "";
-            coincidencias++;
-        } else {
-            tarjetas[i].style.display = "none";
+            if (nombre.includes(texto)) {
+                tarjetas[i].style.display = "";
+                coincidencias++;
+            } else {
+                tarjetas[i].style.display = "none";
+            }
         }
+
+        if (aviso) {
+            aviso.textContent = coincidencias === 0
+                ? `No encontramos "${texto}". Prueba con café o pastel.`
+                : "";
+        }
+
+        console.log(`Búsqueda: "${texto}" | Coincidencias: ${coincidencias}`);
     }
 
-    if (coincidencias === 0) {
-        aviso.textContent = `No encontramos "${texto}". Prueba con café o pastel.`;
-    } else {
-        aviso.textContent = "";
-    }
-    console.log(`Búsqueda: "${texto}" | Coincidencias: ${coincidencias}`);
+    buscador.addEventListener("input", filtrarProductos);
+
+    formBuscador.addEventListener("submit", (e) => {
+        e.preventDefault();
+    });
 }
-
-buscador.addEventListener("input", filtrarProductos);
-formBuscador.addEventListener("submit", (e) => {
-    e.preventDefault();
-});
 
 const formReserva = document.querySelector(".form-reserva");
 
