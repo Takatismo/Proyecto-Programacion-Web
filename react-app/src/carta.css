@@ -1,0 +1,387 @@
+
+
+/* =====================================
+   BOTONES DEL CARRITO
+===================================== */
+
+.btn-agregar-carrito,
+.btn-abrir-carrito {
+    background-color: #8b5e3c;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-agregar-carrito:hover,
+.btn-abrir-carrito:hover {
+    background-color: #684329;
+    transform: scale(1.03);
+}
+
+/* =====================================
+   FONDO DEL CARRITO
+===================================== */
+
+.carrito-fondo {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 9998;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* =====================================
+   PANEL DEL CARRITO
+===================================== */
+
+.carrito-panel {
+    width: 450px;
+    max-width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 25px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.2);
+    animation: aparecerCarrito 0.3s ease;
+}
+
+@keyframes aparecerCarrito {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* =====================================
+   ENCABEZADO
+===================================== */
+
+.carrito-encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.carrito-encabezado h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #8b5e3c;
+}
+
+.carrito-cerrar {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #555555;
+}
+
+.carrito-cerrar:hover {
+    color: #c0392b;
+}
+
+/* =====================================
+   CARRITO VACÍO
+===================================== */
+
+.carrito-vacio {
+    text-align: center;
+    padding: 50px 10px;
+    color: #777777;
+}
+
+.carrito-icono-vacio {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.carrito-vacio h3 {
+    font-size: 20px;
+}
+
+.carrito-vacio p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/* =====================================
+   LISTA DE PRODUCTOS
+===================================== */
+
+.carrito-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.carrito-producto {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    background-color: #fafafa;
+}
+
+.carrito-imagen {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.carrito-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.carrito-info h3 {
+    font-size: 15px;
+    margin: 0 0 6px;
+    color: #333333;
+}
+
+.carrito-info p {
+    font-size: 14px;
+    margin: 4px 0;
+    color: #777777;
+}
+
+.carrito-precio-total {
+    font-size: 14px;
+    white-space: nowrap;
+    color: #8b5e3c;
+}
+
+/* =====================================
+   CANTIDADES
+===================================== */
+
+.carrito-controles {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.carrito-btn-cantidad {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8b5e3c;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.carrito-btn-cantidad:hover {
+    background-color: #684329;
+}
+
+.carrito-controles span {
+    font-weight: bold;
+    min-width: 15px;
+    text-align: center;
+}
+
+/* =====================================
+   ELIMINAR PRODUCTO
+===================================== */
+
+.carrito-eliminar {
+    background-color: transparent;
+    color: #c0392b;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    margin-top: 7px;
+    padding: 3px 0;
+}
+
+.carrito-eliminar:hover {
+    text-decoration: underline;
+}
+
+/* =====================================
+   RESUMEN DE COMPRA
+===================================== */
+
+.carrito-resumen {
+    margin-top: 25px;
+    padding-top: 18px;
+    border-top: 2px solid #e5e5e5;
+}
+
+.carrito-linea {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+    font-size: 15px;
+    color: #555555;
+}
+
+.carrito-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    padding-top: 15px;
+    border-top: 1px solid #dddddd;
+    font-size: 20px;
+    font-weight: bold;
+    color: #8b5e3c;
+}
+
+/* =====================================
+   BOTONES DE ACCIONES
+===================================== */
+
+.carrito-acciones {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.carrito-vaciar {
+    background-color: #eeeeee;
+    color: #555555;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.carrito-vaciar:hover {
+    background-color: #dddddd;
+}
+
+.carrito-continuar {
+    background-color: #8b5e3c;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.carrito-continuar:hover {
+    background-color: #684329;
+}
+
+/* =====================================
+   MODO OSCURO
+===================================== */
+
+body.modo-oscuro .carrito-panel {
+    background-color: #252525;
+    color: #ffffff;
+}
+
+body.modo-oscuro .carrito-encabezado {
+    border-bottom-color: #444444;
+}
+
+body.modo-oscuro .carrito-encabezado h2 {
+    color: #d5a477;
+}
+
+body.modo-oscuro .carrito-cerrar {
+    color: #ffffff;
+}
+
+body.modo-oscuro .carrito-producto {
+    background-color: #333333;
+    border-color: #555555;
+}
+
+body.modo-oscuro .carrito-info h3 {
+    color: #ffffff;
+}
+
+body.modo-oscuro .carrito-info p {
+    color: #cccccc;
+}
+
+body.modo-oscuro .carrito-resumen {
+    border-top-color: #555555;
+}
+
+body.modo-oscuro .carrito-linea {
+    color: #dddddd;
+}
+
+body.modo-oscuro .carrito-total {
+    border-top-color: #555555;
+    color: #d5a477;
+}
+
+body.modo-oscuro .carrito-vacio {
+    color: #cccccc;
+}
+
+body.modo-oscuro .carrito-vaciar {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+/* =====================================
+   DISEÑO RESPONSIVE
+===================================== */
+
+@media (max-width: 600px) {
+    .carrito-panel {
+        width: 100%;
+        padding: 18px;
+    }
+
+    .carrito-encabezado h2 {
+        font-size: 21px;
+    }
+
+    .carrito-producto {
+        gap: 9px;
+        padding: 9px;
+    }
+
+    .carrito-imagen {
+        width: 60px;
+        height: 60px;
+    }
+
+    .carrito-info h3 {
+        font-size: 13px;
+    }
+
+    .carrito-info p {
+        font-size: 12px;
+    }
+
+    .carrito-precio-total {
+        font-size: 12px;
+    }
+
+    .carrito-total {
+        font-size: 18px;
+    }
+}
