@@ -876,7 +876,22 @@ footer a {
     font-family: inherit;
     font-size: 1.6rem;
 }
+.modal-botones {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.6rem;
+}
 
+.modal-caja .boton-wsp {
+    background-color: #25d366;
+    color: #fff;
+}
+
+.modal-caja .boton-wsp:hover {
+    background-color: #1ebe5a;
+}
 .carta .productos>div {
     cursor: pointer;
 }
