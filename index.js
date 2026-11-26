@@ -49,20 +49,25 @@ if (formReserva) {
 
         const lugarElegido = formReserva.querySelector('input[name="lugar"]:checked');
         const lugar = lugarElegido ? nombresLugar[lugarElegido.value] : "Sin elegir";
+        const texto =
+            `Hola, quiero reservar en La Masseria:\n` +
+            `Nombre: ${nombre}\n` +
+            `Teléfono: ${telefono}\n` +
+            `Fecha: ${fecha}\n` +
+            `Hora: ${hora}\n` +
+            `Personas: ${personas}\n` +
+            `Lugar: ${lugar}`;
+        const enlace = `https://wa.me/51912594051?text=${encodeURIComponent(texto)}`;
+
+        const ventana = window.open(enlace, "_blank");
+        if (ventana) ventana.opener = null;
 
         abrirModal(`
-            <h2 id="modalTitulo">¡Reserva recibida!</h2>
-            <ul class="modal-lista">
-                <li><strong>Nombre:</strong> ${escaparHTML(nombre)}</li>
-                <li><strong>Teléfono:</strong> ${escaparHTML(telefono)}</li>
-                <li><strong>Fecha:</strong> ${escaparHTML(fecha)}</li>
-                <li><strong>Hora:</strong> ${escaparHTML(hora)}</li>
-                <li><strong>Personas:</strong> ${escaparHTML(personas)}</li>
-                <li><strong>Lugar:</strong> ${escaparHTML(lugar)}</li>
-            </ul>
-            <button type="button" class="boton" data-cerrar>Aceptar</button>`);
+         <h2 id="modalTitulo">¡Casi listo!</h2>
+            <p>Te abrimos WhatsApp con tu reserva. <strong>Presiona "Enviar" allá</strong> para que la recibamos.</p>
+            ${ventana ? "" : `<a class="boton" href="${enlace}" target="_blank" rel="noopener">Abrir WhatsApp</a>`}
+            <button type="button" class="boton" data-cerrar>Cerrar</button>`);
 
-        console.log(`Reserva: ${nombre} | ${fecha} ${hora} | ${personas} personas | ${lugar}`);
         formReserva.reset();
     });
 }
